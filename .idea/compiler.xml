@@ -6,11 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="security" />
+        <module name="telegram_api" />
+        <module name="database_service" />
         <module name="gateway" />
+        <module name="binance_api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="gateway" target="1.5" />
+      <module name="binance_api" target="17" />
+      <module name="database_service" target="17" />
+      <module name="gateway" target="17" />
+      <module name="security" target="17" />
+      <module name="telegram_api" target="17" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="binance_api" options="-parameters" />
+      <module name="database_service" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="security" options="-parameters" />
+      <module name="telegram_api" options="-parameters" />
+    </option>
   </component>
 </project>
