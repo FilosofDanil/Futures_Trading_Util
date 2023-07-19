@@ -43,6 +43,11 @@
             <scope>system</scope>
             <systemPath>C:/Users/serhi/Desktop/binance-futures-connector-java/out/artifacts/binance_futures_connector_java_jar/binance-futures-connector-java.jar</systemPath>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>4.0.2</version>
+        </dependency>
     </dependencies>
 
     <build>
