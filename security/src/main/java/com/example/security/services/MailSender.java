@@ -21,6 +21,5 @@ public class MailSender {
         mailMessage.setSubject(subject);
         mailMessage.setText(message);
 
-        javaMailSender.send(mailMessage);
     }
 }
