@@ -1,5 +1,6 @@
 package com.example.security.services;
 
+import com.example.security.model.UsernameModel;
 import com.example.security.model.Users;
 
 public interface AuthService {
@@ -7,5 +8,5 @@ public interface AuthService {
 
     void signUp(Users user);
 
-    void activate(String code, String username);
+    void activate(String code, UsernameModel username);
 }

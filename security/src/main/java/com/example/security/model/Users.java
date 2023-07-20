@@ -15,12 +15,12 @@ public class Users {
     private Long id;
     @JsonProperty("email")
     private String email;
-    @JsonProperty("user_password")
+    @JsonProperty("password")
     private String password;
-    @JsonProperty("profile_name")
-    private String profile_name;
+    @JsonProperty("profileName")
+    private String profileName;
     @JsonProperty("verified")
     private Boolean verified;
-    @JsonProperty("activation_code")
+    @JsonProperty("activationCode")
     private String activationCode;
 }

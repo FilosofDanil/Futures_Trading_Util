@@ -1,6 +1,7 @@
 package com.example.security.services.impl;
 
 import com.example.security.client.DataClient;
+import com.example.security.model.UsernameModel;
 import com.example.security.model.Users;
 import com.example.security.services.AuthService;
 import com.example.security.services.MailSender;
@@ -22,8 +23,8 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public void signUp(Users user) {
-        dataClient.create(user);
         user.setActivationCode(UUID.randomUUID().toString());
+        dataClient.create(user);
         sendActivationCodeAssistant(user);
     }
 
@@ -32,8 +33,9 @@ public class AuthServiceImpl implements AuthService {
     }
 
     @Override
-    public void activate(String code, String username) {
-        Users user = dataClient.getUserByName(username);
+    public void activate(String code, UsernameModel username) {
+        Users user = dataClient.getUserByName(username.getUsername());
+        System.out.println(user.getEmail());
         if (user.getActivationCode().equals(code)) {
             user.setActivationCode(null);
             user.setVerified(true);

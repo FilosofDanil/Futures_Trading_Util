@@ -1,5 +1,6 @@
 package com.example.security.controller;
 
+import com.example.security.model.UsernameModel;
 import com.example.security.model.Users;
 import com.example.security.services.AuthService;
 import lombok.RequiredArgsConstructor;
@@ -26,7 +27,7 @@ public class AuthController {
     }
 
     @PostMapping("/activate/{code}")
-    public void signUp(@PathVariable String code, @RequestBody String username) {
+    public void signUp(@PathVariable String code, @RequestBody UsernameModel username) {
         authService.activate(code, username);
     }
 }
