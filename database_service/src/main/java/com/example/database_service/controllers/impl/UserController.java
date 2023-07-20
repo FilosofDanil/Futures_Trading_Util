@@ -38,7 +38,7 @@ public class UserController implements IRestController<Users> {
 
     @Override
     @PutMapping("/{id}")
-    public void update(Long id, Users users) {
+    public void update(@PathVariable("id") Long id, @RequestBody Users users) {
         usersDBAService.update(users, id);
     }
 
