@@ -1,5 +1,6 @@
 package com.example.security.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
@@ -9,6 +10,9 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Users {
+    @JsonProperty("id")
+    @JsonIgnore
+    private Long id;
     @JsonProperty("email")
     private String email;
     @JsonProperty("user_password")
