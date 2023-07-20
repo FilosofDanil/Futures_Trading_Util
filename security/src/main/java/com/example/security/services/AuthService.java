@@ -4,7 +4,7 @@ import com.example.security.model.UsernameModel;
 import com.example.security.model.Users;
 
 public interface AuthService {
-    Boolean login(String username);
+    Boolean login(UsernameModel username);
 
     void signUp(Users user);
 

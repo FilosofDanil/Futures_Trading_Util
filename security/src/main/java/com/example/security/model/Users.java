@@ -9,9 +9,9 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class Users {
     @JsonProperty("id")
-    @JsonIgnore
     private Long id;
     @JsonProperty("email")
     private String email;

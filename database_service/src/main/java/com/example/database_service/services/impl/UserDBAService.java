@@ -35,7 +35,14 @@ public class UserDBAService implements DBAService<Users> {
 
     @Override
     public void update(Users user, Long id) {
-
+        userRepo.findById(id).map(users -> {
+            users.setVerified(user.getVerified());
+            users.setActivationCode(user.getActivationCode());
+            users.setProfileName(user.getProfileName());
+            users.setEmail(user.getEmail());
+            users.setPassword(user.getPassword());
+            return userRepo.save(users);
+        });
     }
 
     @Override

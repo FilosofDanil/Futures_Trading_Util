@@ -17,8 +17,11 @@ public class AuthServiceImpl implements AuthService {
     private final DataClient dataClient;
 
     @Override
-    public Boolean login(String username) {
-        return dataClient.getUserByName(username).getVerified();
+    public Boolean login(UsernameModel username) {
+        if (dataClient.getUserByName(username.getUsername()) == null) {
+            return Boolean.FALSE;
+        }
+        return dataClient.getUserByName(username.getUsername()).getVerified();
     }
 
     @Override
@@ -35,10 +38,10 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public void activate(String code, UsernameModel username) {
         Users user = dataClient.getUserByName(username.getUsername());
-        System.out.println(user.getEmail());
         if (user.getActivationCode().equals(code)) {
             user.setActivationCode(null);
             user.setVerified(true);
+            System.out.println(user.toString());
             dataClient.update(user.getId(), user);
         }
     }
