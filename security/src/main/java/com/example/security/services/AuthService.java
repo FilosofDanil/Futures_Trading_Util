@@ -3,7 +3,9 @@ package com.example.security.services;
 import com.example.security.model.Users;
 
 public interface AuthService {
-    void login(Users user);
+    Boolean login(String username);
 
     void signUp(Users user);
+
+    void activate(String code, String username);
 }
