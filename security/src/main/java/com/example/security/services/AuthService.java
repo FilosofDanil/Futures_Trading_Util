@@ -1,7 +1,9 @@
 package com.example.security.services;
 
-public interface AuthService {
-    void login();
+import com.example.security.model.Users;
 
-    void signUp();
+public interface AuthService {
+    void login(Users user);
+
+    void signUp(Users user);
 }
