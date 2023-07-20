@@ -13,7 +13,7 @@ public interface DataClient {
     Users create(@RequestBody Users users);
 
     @PutMapping("/{id}")
-    void update(Long id, Users users);
+    void update(@PathVariable("id") Long id, @RequestBody Users users);
 
     @GetMapping("/{id}")
     Users getById(@PathVariable("id") Long id);
