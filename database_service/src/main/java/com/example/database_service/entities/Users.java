@@ -19,8 +19,8 @@ public class Users {
     private String email;
     @Column(name = "user_password", nullable = false)
     private String password;
-    @Column(name = "profile_name", nullable = false)
-    private String profile_name;
+    @Column(name = "profileName", nullable = false)
+    private String profileName;
     @Column(name = "verified")
     private Boolean verified;
     @Column(name = "activation_code")
