@@ -1,8 +1,11 @@
 package com.example.telegram_api.controllers;
 
+import com.example.telegram_api.configs.BotConfig;
 import com.example.telegram_api.models.UserRequest;
 import com.example.telegram_api.dispatcher.IDispatcher;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -15,14 +18,16 @@ public class TelegramController extends TelegramLongPollingBot {
 
     private final IDispatcher dispatcher;
 
+    private final BotConfig config;
+
     @Override
     public String getBotUsername() {
-        return "white_proud_bot";
+        return config.getName();
     }
 
     @Override
     public String getBotToken() {
-        return "6165254233:AAE_c7eQA4dPtaEnZZCj71jvriU32v_OAMU";
+        return config.getToken();
     }
 
     @Override
@@ -43,8 +48,9 @@ public class TelegramController extends TelegramLongPollingBot {
 //        response.setText("Санчізес");
 //        sendMessage(response);
     }
-    public void sendMessage(SendMessage message){
-        if(message!=null){
+
+    public void sendMessage(SendMessage message) {
+        if (message != null) {
             try {
                 execute(message);
             } catch (TelegramApiException e) {

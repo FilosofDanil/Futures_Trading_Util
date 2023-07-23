@@ -10,7 +10,8 @@ import org.telegram.telegrambots.bots.DefaultBotOptions;
 @Component
 public class BotSender extends DefaultAbsSender {
 
-    private static final String botToken = "6165254233:AAE_c7eQA4dPtaEnZZCj71jvriU32v_OAMU";
+    @Value("$bot.token")
+    private static String botToken;
 
     protected BotSender() {
         super(new DefaultBotOptions());
