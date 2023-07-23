@@ -25,12 +25,14 @@ public class AuthController {
     }
 
     @PostMapping("/signUp")
-    public void signUp(@RequestBody Users user) {
+    public ResponseEntity<Users> signUp(@RequestBody Users user) {
         authService.signUp(user);
+        return new ResponseEntity<>(user, HttpStatus.OK);
     }
 
     @PostMapping("/activate/{code}")
-    public void signUp(@PathVariable String code, @RequestBody UsernameModel username) {
+    public ResponseEntity<String> signUp(@PathVariable String code, @RequestBody UsernameModel username) {
         authService.activate(code, username);
+        return new ResponseEntity<>(code, HttpStatus.OK);
     }
 }

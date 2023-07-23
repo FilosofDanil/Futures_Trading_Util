@@ -34,31 +34,6 @@ public class RegistrateHandler extends UserRequestHandler {
             session.setState(States.WAITING_FOR_MAIL);
             sessionService.saveSession(request.getChatId(), session);
             telegramService.sendMessage(request.getChatId(), "Send your mail⤵️");
-            return;
-        }
-        if (request.getUserSession().getState().equals(States.WAITING_FOR_MAIL)) {
-            UserSession session = request.getUserSession();
-            session.setEmail(request.getUpdate().getMessage().getText());
-            session.setState(States.WAITING_FOR_PASSWORD);
-            sessionService.saveSession(request.getChatId(), session);
-            telegramService.sendMessage(request.getChatId(), "Send your password (8-16 digits)⤵️");
-            return;
-        }
-        if (request.getUserSession().getState().equals(States.WAITING_FOR_PASSWORD)) {
-            UserSession session = request.getUserSession();
-            session.setPassword(request.getUpdate().getMessage().getText());
-            session.setState(States.SUCCESSFULLY_SIGNED_UP);
-            sessionService.saveSession(request.getChatId(), session);
-            Users user = Users.builder()
-                    .verified(false)
-                    .email(session.getEmail())
-                    .password(session.getPassword())
-                    .profileName(request.getUpdate().getMessage().getChat().getFirstName())
-                    .build();
-
-            registryService.signUp(user);
-            telegramService.sendMessage(request.getChatId(), "You're signed up in our system. Now you need to activate your mail by sending me an activation code, which we have sent on your email ⤵");
-
         }
     }
 

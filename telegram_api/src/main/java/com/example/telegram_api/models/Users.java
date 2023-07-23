@@ -16,7 +16,7 @@ public class Users {
     private String email;
     @JsonProperty("password")
     private String password;
-    @JsonProperty("profile_name")
+    @JsonProperty("profileName")
     private String profileName;
     @JsonProperty("verified")
     private Boolean verified;
