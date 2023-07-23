@@ -29,11 +29,13 @@ public class RegistrateHandler extends UserRequestHandler {
 
     @Override
     public void handle(UserRequest request) {
-        if (request.getUserSession().getState().equals(States.CONVERSATION_STARTED)) {
+        if (request.getUserSession().getState() != null) {
             UserSession session = request.getUserSession();
             session.setState(States.WAITING_FOR_MAIL);
             sessionService.saveSession(request.getChatId(), session);
             telegramService.sendMessage(request.getChatId(), "Send your mail⤵️");
+        } else{
+            telegramService.sendMessage(request.getChatId(), "You need to start bot -> /start");
         }
     }
 

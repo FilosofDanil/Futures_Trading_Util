@@ -40,26 +40,24 @@ public class RegistrateTextHandler extends UserRequestHandler {
             UserSession session = request.getUserSession();
             session.setPassword(request.getUpdate().getMessage().getText());
             session.setState(States.SUCCESSFULLY_SIGNED_UP);
-            sessionService.saveSession(request.getChatId(), session);
             Users user = Users.builder()
                     .verified(false)
                     .email(session.getEmail())
                     .password(session.getPassword())
                     .profileName(request.getUpdate().getMessage().getChat().getUserName())
                     .build();
-
             registryService.signUp(user);
+            sessionService.saveSession(request.getChatId(), session);
             telegramService.sendMessage(request.getChatId(), "You're signed up in our system. Now you need to activate your mail by sending me an activation code, which we have sent on your email ⤵");
             return;
         }
         if (request.getUserSession().getState().equals(States.SUCCESSFULLY_SIGNED_UP)) {
             UserSession session = request.getUserSession();
-            session.setState(States.ACTIVATED);
             sessionService.saveSession(request.getChatId(), session);
             UsernameModel usernameModel = new UsernameModel(request.getUpdate().getMessage().getChat().getUserName());
             registryService.activate(request.getUpdate().getMessage().getText(), usernameModel);
+            session.setState(States.ACTIVATED);
             telegramService.sendMessage(request.getChatId(), "Your account has been activated, and you could authorize by just clicking /login and enjoy our service.");
-
         }
     }
 
