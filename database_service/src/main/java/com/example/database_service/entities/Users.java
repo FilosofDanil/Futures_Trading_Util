@@ -15,11 +15,11 @@ public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "email", nullable = false)
+    @Column(name = "email", nullable = false, unique = true)
     private String email;
     @Column(name = "user_password", nullable = false)
     private String password;
-    @Column(name = "profileName", nullable = false)
+    @Column(name = "profile_name", nullable = false, unique = true)
     private String profileName;
     @Column(name = "verified")
     private Boolean verified;
