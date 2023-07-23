@@ -1,8 +1,7 @@
-package com.example.telegram_api.services;
+package com.example.telegram_api.services.telegram;
 
-import lombok.NoArgsConstructor;
+import com.example.telegram_api.services.telegram.BotSender;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.methods.ParseMode;

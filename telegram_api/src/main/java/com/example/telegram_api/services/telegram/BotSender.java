@@ -1,5 +1,7 @@
-package com.example.telegram_api.services;
+package com.example.telegram_api.services.telegram;
 
+import com.example.telegram_api.configs.BotConfig;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -10,15 +12,15 @@ import org.telegram.telegrambots.bots.DefaultBotOptions;
 @Component
 public class BotSender extends DefaultAbsSender {
 
-    @Value("$bot.token")
-    private static String botToken;
+    private final BotConfig config;
 
-    protected BotSender() {
+    protected BotSender(BotConfig config) {
         super(new DefaultBotOptions());
+        this.config = config;
     }
 
     @Override
     public String getBotToken() {
-        return botToken;
+        return config.getToken();
     }
 }
