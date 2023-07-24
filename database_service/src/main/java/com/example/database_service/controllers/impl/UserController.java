@@ -5,6 +5,9 @@ import com.example.database_service.entities.Users;
 import com.example.database_service.services.DBAService;
 import com.example.database_service.services.UserAdviceService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -53,5 +56,15 @@ public class UserController implements IRestController<Users> {
     @GetMapping("/user/{name}")
     public Users getUserByName(@PathVariable("name") String name) {
         return userAdviceService.findByName(name);
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseBody
+    public ResponseEntity<String> onMethodArgumentNotValidException(
+            MethodArgumentNotValidException e) {
+        return ResponseEntity
+                .status(HttpStatus.BAD_REQUEST)
+                .body(e.getMessage());
     }
 }

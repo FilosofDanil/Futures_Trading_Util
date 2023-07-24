@@ -9,6 +9,7 @@ import com.example.telegram_api.models.Users;
 import com.example.telegram_api.services.functional.RegistryService;
 import com.example.telegram_api.services.telegram.SessionService;
 import com.example.telegram_api.services.telegram.TelegramBotService;
+import feign.FeignException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
@@ -28,37 +29,44 @@ public class RegistrateTextHandler extends UserRequestHandler {
 
     @Override
     public void handle(UserRequest request) {
-        if (request.getUserSession().getState().equals(States.WAITING_FOR_MAIL)) {
-            UserSession session = request.getUserSession();
-            session.setEmail(request.getUpdate().getMessage().getText());
-            session.setState(States.WAITING_FOR_PASSWORD);
-            sessionService.saveSession(request.getChatId(), session);
-            telegramService.sendMessage(request.getChatId(), "Send your password (8-16 digits)⤵️");
-            return;
+        try{
+            if (request.getUserSession().getState().equals(States.WAITING_FOR_MAIL)) {
+                UserSession session = request.getUserSession();
+                session.setEmail(request.getUpdate().getMessage().getText());
+                session.setState(States.WAITING_FOR_PASSWORD);
+                sessionService.saveSession(request.getChatId(), session);
+                telegramService.sendMessage(request.getChatId(), "Send your password (8-16 digits)⤵️");
+                return;
+            }
+            if (request.getUserSession().getState().equals(States.WAITING_FOR_PASSWORD)) {
+                UserSession session = request.getUserSession();
+                session.setPassword(request.getUpdate().getMessage().getText());
+                session.setState(States.SUCCESSFULLY_SIGNED_UP);
+                Users user = Users.builder()
+                        .verified(false)
+                        .email(session.getEmail())
+                        .password(session.getPassword())
+                        .profileName(request.getUpdate().getMessage().getChat().getUserName())
+                        .build();
+                registryService.signUp(user);
+                sessionService.saveSession(request.getChatId(), session);
+                telegramService.sendMessage(request.getChatId(), "You're signed up in our system. Now you need to activate your mail by sending me an activation code, which we have sent on your email ⤵");
+                return;
+            }
+            if (request.getUserSession().getState().equals(States.SUCCESSFULLY_SIGNED_UP)) {
+                UserSession session = request.getUserSession();
+                sessionService.saveSession(request.getChatId(), session);
+                UsernameModel usernameModel = new UsernameModel(request.getUpdate().getMessage().getChat().getUserName());
+                registryService.activate(request.getUpdate().getMessage().getText(), usernameModel);
+                session.setState(States.ACTIVATED);
+                telegramService.sendMessage(request.getChatId(), "Your account has been activated, and you could authorize by just clicking /login and enjoy our service.");
+            }
+        } catch (FeignException ex){
+            if(ex.status()==400){
+                telegramService.sendMessage(request.getChatId(), "Invalid data, please try one more or reload bot with -> /start");
+            }
         }
-        if (request.getUserSession().getState().equals(States.WAITING_FOR_PASSWORD)) {
-            UserSession session = request.getUserSession();
-            session.setPassword(request.getUpdate().getMessage().getText());
-            session.setState(States.SUCCESSFULLY_SIGNED_UP);
-            Users user = Users.builder()
-                    .verified(false)
-                    .email(session.getEmail())
-                    .password(session.getPassword())
-                    .profileName(request.getUpdate().getMessage().getChat().getUserName())
-                    .build();
-            registryService.signUp(user);
-            sessionService.saveSession(request.getChatId(), session);
-            telegramService.sendMessage(request.getChatId(), "You're signed up in our system. Now you need to activate your mail by sending me an activation code, which we have sent on your email ⤵");
-            return;
-        }
-        if (request.getUserSession().getState().equals(States.SUCCESSFULLY_SIGNED_UP)) {
-            UserSession session = request.getUserSession();
-            sessionService.saveSession(request.getChatId(), session);
-            UsernameModel usernameModel = new UsernameModel(request.getUpdate().getMessage().getChat().getUserName());
-            registryService.activate(request.getUpdate().getMessage().getText(), usernameModel);
-            session.setState(States.ACTIVATED);
-            telegramService.sendMessage(request.getChatId(), "Your account has been activated, and you could authorize by just clicking /login and enjoy our service.");
-        }
+
     }
 
     @Override
