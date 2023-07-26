@@ -11,7 +11,8 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(FeignException.class)
     public String handleFeignStatusException(FeignException e, HttpServletResponse response) {
         response.setStatus(e.status());
-        return "feignError";
+        e.printStackTrace();
+        return e.getMessage();
     }
 
 }

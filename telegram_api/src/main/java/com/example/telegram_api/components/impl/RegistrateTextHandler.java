@@ -9,6 +9,7 @@ import com.example.telegram_api.models.Users;
 import com.example.telegram_api.services.functional.RegistryService;
 import com.example.telegram_api.services.telegram.SessionService;
 import com.example.telegram_api.services.telegram.TelegramBotService;
+import com.example.telegram_api.util.ResponseParser;
 import feign.FeignException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -29,7 +30,7 @@ public class RegistrateTextHandler extends UserRequestHandler {
 
     @Override
     public void handle(UserRequest request) {
-        try{
+        try {
             if (request.getUserSession().getState().equals(States.WAITING_FOR_MAIL)) {
                 UserSession session = request.getUserSession();
                 session.setEmail(request.getUpdate().getMessage().getText());
@@ -61,9 +62,10 @@ public class RegistrateTextHandler extends UserRequestHandler {
                 session.setState(States.ACTIVATED);
                 telegramService.sendMessage(request.getChatId(), "Your account has been activated, and you could authorize by just clicking /login and enjoy our service.");
             }
-        } catch (FeignException ex){
-            if(ex.status()==400){
-                telegramService.sendMessage(request.getChatId(), "Invalid data, please try one more or reload bot with -> /start");
+        } catch (FeignException ex) {
+            if (ex.status() == 400) {
+                String message = ResponseParser.extractMessage(ex.getMessage());
+                telegramService.sendMessage(request.getChatId(), message + " Please try one more or reload bot with -> /start");
             }
         }
 
