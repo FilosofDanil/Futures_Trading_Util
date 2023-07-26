@@ -8,6 +8,4 @@ import java.util.List;
 
 @FeignClient(name = "database-service", url = "${application.config.database-url}")
 public interface DataClient {
-    @GetMapping("/users/")
-    List<Users> getAll();
 }
