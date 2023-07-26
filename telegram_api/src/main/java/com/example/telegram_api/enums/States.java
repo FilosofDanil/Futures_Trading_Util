@@ -5,5 +5,6 @@ public enum States {
     WAITING_FOR_MAIL,
     WAITING_FOR_PASSWORD,
     SUCCESSFULLY_SIGNED_UP,
-    ACTIVATED
+    ACTIVATED,
+    ERROR
 }
