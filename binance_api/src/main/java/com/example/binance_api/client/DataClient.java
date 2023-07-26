@@ -1,5 +1,6 @@
 package com.example.binance_api.client;
 
+import com.example.binance_api.models.Users;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
