@@ -1,6 +1,7 @@
 package com.example.telegram_api.services.functional.impl;
 
 import com.example.telegram_api.client.DataClient;
+import com.example.telegram_api.models.LoginRequest;
 import com.example.telegram_api.models.UsernameModel;
 import com.example.telegram_api.models.Users;
 import com.example.telegram_api.services.functional.RegistryService;
@@ -23,7 +24,7 @@ public class RegistryServiceBean implements RegistryService {
     }
 
     @Override
-    public void login(Users users) {
-
+    public Boolean login(LoginRequest request) {
+        return null;
     }
 }
