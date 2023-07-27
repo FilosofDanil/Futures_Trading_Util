@@ -25,6 +25,6 @@ public class RegistryServiceBean implements RegistryService {
 
     @Override
     public Boolean login(LoginRequest request) {
-        return null;
+        return client.login(request);
     }
 }

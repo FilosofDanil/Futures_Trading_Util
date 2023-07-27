@@ -1,5 +1,6 @@
 package com.example.telegram_api.client;
 
+import com.example.telegram_api.models.LoginRequest;
 import com.example.telegram_api.models.UsernameModel;
 import com.example.telegram_api.models.Users;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -13,7 +14,7 @@ public interface DataClient {
     void signUp(@RequestBody Users user);
 
     @PostMapping("/login")
-    void login(@RequestBody Users user);
+    Boolean login(@RequestBody LoginRequest request);
 
     @PostMapping("/activate/{code}")
     void activate(@PathVariable String code, @RequestBody UsernameModel username);
