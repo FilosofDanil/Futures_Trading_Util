@@ -1,10 +1,10 @@
 package com.example.security.services;
 
 import com.example.security.model.UsernameModel;
-import com.example.security.model.Users;
+import com.example.security.model.*;
 
 public interface AuthService {
-    Boolean login(UsernameModel username);
+    Boolean login(LoginRequest loginRequest);
 
     void signUp(Users user);
 

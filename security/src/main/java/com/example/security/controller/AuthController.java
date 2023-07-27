@@ -1,11 +1,9 @@
 package com.example.security.controller;
 
-import com.example.security.model.UsernameModel;
-import com.example.security.model.Users;
+import com.example.security.model.*;
 import com.example.security.services.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,8 +18,8 @@ public class AuthController {
     private final AuthService authService;
 
     @PostMapping("/login")
-    public ResponseEntity<Boolean> login(@RequestBody UsernameModel username) {
-        return new ResponseEntity<>(authService.login(username), HttpStatus.OK);
+    public ResponseEntity<Boolean> login(@RequestBody LoginRequest loginRequest) {
+        return new ResponseEntity<>(authService.login(loginRequest), HttpStatus.OK);
     }
 
     @PostMapping("/signUp")
