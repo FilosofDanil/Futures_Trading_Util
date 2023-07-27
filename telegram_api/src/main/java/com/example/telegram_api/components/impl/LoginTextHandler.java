@@ -30,16 +30,18 @@ public class LoginTextHandler extends UserRequestHandler {
 
     @Override
     public void handle(UserRequest request) {
+        System.out.println("fefrer");
         try {
             UserSession session = request.getUserSession();
-            if (!request.getLogined() && session.getState().equals(States.LOGIN_WAIT_PASSWORD)) {
+            if (!session.getAuth() && session.getState().equals(States.LOGIN_WAIT_PASSWORD)) {
                 LoginRequest loginRequest = LoginRequest.builder()
-                        .email(request.getUserSession().getEmail())
                         .name(request.getUpdate().getMessage().getChat().getUserName())
-                        .password(request.getUserSession().getPassword())
+                        .password(request.getUpdate().getMessage().getText())
                         .build();
+                System.out.println(loginRequest);
                 if (registryService.login(loginRequest)) {
                     session.setState(States.SUCCESSFULLY_LOGIN);
+                    session.setAuth(true);
                     sessionService.saveSession(request.getChatId(), session);
                     telegramService.sendMessage(request.getChatId(), "You've been successfully login, now you can use all bot functions!");
                 } else {

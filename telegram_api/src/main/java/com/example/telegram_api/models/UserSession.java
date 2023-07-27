@@ -11,4 +11,5 @@ public class UserSession {
     private States state;
     private String email;
     private String password;
+    private Boolean auth;
 }

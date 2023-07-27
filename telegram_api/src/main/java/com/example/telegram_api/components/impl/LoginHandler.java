@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 @AllArgsConstructor
 public class LoginHandler extends UserRequestHandler {
-    private static final String command = "/signup";
+    private static final String command = "/login";
 
     private final SessionService sessionService;
 
@@ -28,14 +28,14 @@ public class LoginHandler extends UserRequestHandler {
     public void handle(UserRequest request) {
         if (request.getUserSession().getState() != null) {
             UserSession session = request.getUserSession();
-            if (request.getLogined()) {
+            if (session.getAuth()) {
                 session.setState(States.SUCCESSFULLY_LOGIN);
                 sessionService.saveSession(request.getChatId(), session);
                 telegramService.sendMessage(request.getChatId(), "You're already authorized in the system");
                 return;
             }
-            if (!request.getLogined()) {
-                session.setState(States.START_LOGIN);
+            if (!session.getAuth()) {
+                session.setState(States.LOGIN_WAIT_PASSWORD);
                 sessionService.saveSession(request.getChatId(), session);
                 telegramService.sendMessage(request.getChatId(), "Now write down your password. ");
             }

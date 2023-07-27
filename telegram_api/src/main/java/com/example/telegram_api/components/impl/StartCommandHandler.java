@@ -30,6 +30,7 @@ public class StartCommandHandler extends UserRequestHandler {
     public void handle(UserRequest request) {
         UserSession session = request.getUserSession();
         session.setState(States.CONVERSATION_STARTED);
+        session.setAuth(false);
         sessionService.saveSession(request.getChatId(), session);
         telegramService.sendMessage(request.getChatId(),
                 "Hello! We're glad, that you're prefer our bot, and we hope, that you'll enjoy it, and this bot come in handy for you!" +
