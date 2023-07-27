@@ -1,63 +1,93 @@
-2023-07-19 12:19:48.117[1689761988117] | INFO  | main       | c.e.b.BinanceApiApplication          - Starting BinanceApiApplication using Java 17 with PID 23092 (C:\Users\serhi\Desktop\Projects\Futures Trading Util\binance_api\target\classes started by serhi in C:\Users\serhi\Desktop\Projects\Futures Trading Util)
-2023-07-19 12:19:48.122[1689761988122] | INFO  | main       | c.e.b.BinanceApiApplication          - No active profile set, falling back to 1 default profile: "default"
-2023-07-19 12:19:48.845[1689761988845] | INFO  | main       | o.s.cloud.context.scope.GenericScope - BeanFactory id=c887c56b-8f2c-33da-8ae8-2e5466946705
-2023-07-19 12:19:49.108[1689761989108] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8090 (http)
-2023-07-19 12:19:49.116[1689761989116] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8090"]
-2023-07-19 12:19:49.118[1689761989118] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
-2023-07-19 12:19:49.118[1689761989118] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-19 12:19:49.231[1689761989231] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
-2023-07-19 12:19:49.231[1689761989231] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1059 ms
-2023-07-19 12:19:50.161[1689761990161] | INFO  | main       | o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
-2023-07-19 12:19:50.737[1689761990737] | WARN  | main       | o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-07-19 12:19:50.784[1689761990784] | INFO  | main       | o.s.c.n.eureka.InstanceInfoFactory   - Setting initial instance status as: STARTING
-2023-07-19 12:19:50.832[1689761990832] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Initializing Eureka in region us-east-1
-2023-07-19 12:19:50.836[1689761990836] | INFO  | main       | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-07-19 12:19:50.861[1689761990861] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
-2023-07-19 12:19:50.861[1689761990861] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
-2023-07-19 12:19:50.862[1689761990862] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
-2023-07-19 12:19:50.862[1689761990862] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application is null : false
-2023-07-19 12:19:50.862[1689761990862] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
-2023-07-19 12:19:50.862[1689761990862] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application version is -1: true
-2023-07-19 12:19:50.862[1689761990862] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
-2023-07-19 12:19:51.191[1689761991191] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - The response status is 200
-2023-07-19 12:19:51.197[1689761991197] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Starting heartbeat executor: renew interval is: 30
-2023-07-19 12:19:51.203[1689761991203] | INFO  | main       | c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-07-19 12:19:51.216[1689761991216] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Discovery Client initialized at timestamp 1689761991215 with initial instances count: 1
-2023-07-19 12:19:51.218[1689761991218] | INFO  | main       | o.s.c.n.e.s.EurekaServiceRegistry    - Registering application BINANCE_API with eureka with status UP
-2023-07-19 12:19:51.219[1689761991219] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1689761991219, current=UP, previous=STARTING]
-2023-07-19 12:19:51.220[1689761991220] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
-2023-07-19 12:19:51.221[1689761991221] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8090"]
-2023-07-19 12:19:51.249[1689761991249] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8090 (http) with context path ''
-2023-07-19 12:19:51.250[1689761991250] | INFO  | main       | o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
-2023-07-19 12:19:51.285[1689761991285] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
-2023-07-19 12:19:51.768[1689761991768] | INFO  | main       | c.e.b.BinanceApiApplication          - Started BinanceApiApplication in 4.829 seconds (process running for 6.497)
-2023-07-19 12:24:50.880[1689762290880] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-07-19 12:27:01.584[1689762421584] | INFO  | SpringApplicationShutdownHook | o.s.c.n.e.s.EurekaServiceRegistry    - Unregistering application BINANCE_API with eureka with status DOWN
-2023-07-19 12:27:01.584[1689762421584] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1689762421584, current=DOWN, previous=UP]
-2023-07-19 12:27:01.584[1689762421584] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
-2023-07-19 12:27:01.607[1689762421607] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-07-21 13:55:21.321[1689940521321] | INFO  | main       | c.e.b.BinanceApiApplication          - Starting BinanceApiApplication using Java 17 with PID 23856 (C:\Users\serhi\Desktop\Projects\Futures Trading Util\binance_api\target\classes started by serhi in C:\Users\serhi\Desktop\Projects\Futures Trading Util)
+2023-07-21 13:55:21.326[1689940521326] | INFO  | main       | c.e.b.BinanceApiApplication          - No active profile set, falling back to 1 default profile: "default"
+2023-07-21 13:55:22.078[1689940522078] | INFO  | main       | o.s.cloud.context.scope.GenericScope - BeanFactory id=56d1eab3-77dd-3ca5-9b71-c1004bac5d42
+2023-07-21 13:55:22.365[1689940522365] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8090 (http)
+2023-07-21 13:55:22.372[1689940522372] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8090"]
+2023-07-21 13:55:22.375[1689940522375] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2023-07-21 13:55:22.375[1689940522375] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-21 13:55:22.535[1689940522535] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2023-07-21 13:55:22.535[1689940522535] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1150 ms
+2023-07-21 13:55:23.492[1689940523492] | INFO  | main       | o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-07-21 13:55:24.038[1689940524038] | WARN  | main       | o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-07-21 13:55:24.113[1689940524113] | INFO  | main       | o.s.c.n.eureka.InstanceInfoFactory   - Setting initial instance status as: STARTING
+2023-07-21 13:55:24.168[1689940524168] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Initializing Eureka in region us-east-1
+2023-07-21 13:55:24.173[1689940524173] | INFO  | main       | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-07-21 13:55:24.198[1689940524198] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
+2023-07-21 13:55:24.199[1689940524199] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
+2023-07-21 13:55:24.199[1689940524199] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
+2023-07-21 13:55:24.199[1689940524199] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application is null : false
+2023-07-21 13:55:24.199[1689940524199] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
+2023-07-21 13:55:24.199[1689940524199] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application version is -1: true
+2023-07-21 13:55:24.199[1689940524199] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
+2023-07-21 13:55:24.637[1689940524637] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - The response status is 200
+2023-07-21 13:55:24.645[1689940524645] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Starting heartbeat executor: renew interval is: 30
+2023-07-21 13:55:24.658[1689940524658] | INFO  | main       | c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-07-21 13:55:24.673[1689940524673] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Discovery Client initialized at timestamp 1689940524672 with initial instances count: 2
+2023-07-21 13:55:24.675[1689940524675] | INFO  | main       | o.s.c.n.e.s.EurekaServiceRegistry    - Registering application BINANCE_API with eureka with status UP
+2023-07-21 13:55:24.676[1689940524676] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1689940524676, current=UP, previous=STARTING]
+2023-07-21 13:55:24.678[1689940524678] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
+2023-07-21 13:55:24.679[1689940524679] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8090"]
+2023-07-21 13:55:24.706[1689940524706] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8090 (http) with context path ''
+2023-07-21 13:55:24.707[1689940524707] | INFO  | main       | o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
+2023-07-21 13:55:24.745[1689940524745] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
+2023-07-21 13:55:25.178[1689940525178] | INFO  | main       | c.e.b.BinanceApiApplication          - Started BinanceApiApplication in 4.884 seconds (process running for 6.675)
+2023-07-21 14:00:24.211[1689940824211] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-07-21 14:05:24.221[1689941124221] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-07-21 14:10:24.224[1689941424224] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-07-21 14:15:24.230[1689941724230] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-07-21 14:20:25.857[1689942025857] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-07-21 14:25:25.867[1689942325867] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-07-21 14:30:25.874[1689942625874] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-07-21 14:35:25.883[1689942925883] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-07-21 14:40:25.887[1689943225887] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-07-21 14:45:25.895[1689943525895] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-07-21 14:49:02.763[1689943742763] | INFO  | SpringApplicationShutdownHook | o.s.c.n.e.s.EurekaServiceRegistry    - Unregistering application BINANCE_API with eureka with status DOWN
+2023-07-21 14:49:02.763[1689943742763] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1689943742763, current=DOWN, previous=UP]
+2023-07-21 14:49:02.764[1689943742764] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
+2023-07-21 14:49:02.785[1689943742785] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
+2023-07-21 14:49:02.886[1689943742886] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Shutting down DiscoveryClient ...
+2023-07-21 14:49:05.905[1689943745905] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Unregistering ...
+2023-07-21 14:49:05.985[1689943745985] | INFO  | SpringApplicationShutdownHook | c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
 	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:425)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:383)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:213)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:192)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:185)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:201)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1182)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:173)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1026)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:139)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:108)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -97,110 +127,10 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
 	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
-	... 21 more
+	... 39 more
 
-2023-07-19 12:27:01.608[1689762421608] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2023-07-19 12:27:01.622[1689762421622] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Shutting down DiscoveryClient ...
-2023-07-19 12:27:01.634[1689762421634] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
-	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:101)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:87)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
-	... 22 more
-
-2023-07-19 12:27:01.634[1689762421634] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2023-07-19 12:27:01.635[1689762421635] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration failed Cannot execute request on any known server
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 12:27:01.636[1689762421636] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 12:27:01.645[1689762421645] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Unregistering ...
-2023-07-19 12:27:01.651[1689762421651] | INFO  | SpringApplicationShutdownHook | c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-07-21 14:49:05.985[1689943745985] | WARN  | SpringApplicationShutdownHook | c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-07-21 14:49:06.007[1689943746007] | INFO  | SpringApplicationShutdownHook | c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
@@ -283,8 +213,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
 	... 40 more
 
-2023-07-19 12:27:01.651[1689762421651] | WARN  | SpringApplicationShutdownHook | c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2023-07-19 12:27:01.651[1689762421651] | ERROR | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - de-registration failedCannot execute request on any known server
+2023-07-21 14:49:06.007[1689943746007] | WARN  | SpringApplicationShutdownHook | c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-07-21 14:49:06.008[1689943746008] | ERROR | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - de-registration failedCannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
@@ -318,279 +248,4 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:108)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 12:27:01.706[1689762421706] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Completed shut down of DiscoveryClient
-2023-07-19 12:50:27.138[1689763827138] | INFO  | main       | c.e.b.BinanceApiApplication          - Starting BinanceApiApplication using Java 17 with PID 25188 (C:\Users\serhi\Desktop\Projects\Futures Trading Util\binance_api\target\classes started by serhi in C:\Users\serhi\Desktop\Projects\Futures Trading Util)
-2023-07-19 12:50:27.143[1689763827143] | INFO  | main       | c.e.b.BinanceApiApplication          - No active profile set, falling back to 1 default profile: "default"
-2023-07-19 12:50:28.268[1689763828268] | INFO  | main       | o.s.cloud.context.scope.GenericScope - BeanFactory id=c887c56b-8f2c-33da-8ae8-2e5466946705
-2023-07-19 12:50:28.617[1689763828617] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8090 (http)
-2023-07-19 12:50:28.626[1689763828626] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8090"]
-2023-07-19 12:50:28.628[1689763828628] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
-2023-07-19 12:50:28.629[1689763828629] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-19 12:50:28.785[1689763828785] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
-2023-07-19 12:50:28.785[1689763828785] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1578 ms
-2023-07-19 12:50:30.350[1689763830350] | INFO  | main       | o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
-2023-07-19 12:50:31.165[1689763831165] | WARN  | main       | o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-07-19 12:50:31.244[1689763831244] | INFO  | main       | o.s.c.n.eureka.InstanceInfoFactory   - Setting initial instance status as: STARTING
-2023-07-19 12:50:31.314[1689763831314] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Initializing Eureka in region us-east-1
-2023-07-19 12:50:31.324[1689763831324] | INFO  | main       | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-07-19 12:50:31.389[1689763831389] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
-2023-07-19 12:50:31.389[1689763831389] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
-2023-07-19 12:50:31.390[1689763831390] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
-2023-07-19 12:50:31.390[1689763831390] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application is null : false
-2023-07-19 12:50:31.390[1689763831390] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
-2023-07-19 12:50:31.390[1689763831390] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application version is -1: true
-2023-07-19 12:50:31.390[1689763831390] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
-2023-07-19 12:50:32.337[1689763832337] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - The response status is 200
-2023-07-19 12:50:32.345[1689763832345] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Starting heartbeat executor: renew interval is: 30
-2023-07-19 12:50:32.354[1689763832354] | INFO  | main       | c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-07-19 12:50:32.374[1689763832374] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Discovery Client initialized at timestamp 1689763832373 with initial instances count: 0
-2023-07-19 12:50:32.376[1689763832376] | INFO  | main       | o.s.c.n.e.s.EurekaServiceRegistry    - Registering application BINANCE_API with eureka with status UP
-2023-07-19 12:50:32.377[1689763832377] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1689763832377, current=UP, previous=STARTING]
-2023-07-19 12:50:32.379[1689763832379] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
-2023-07-19 12:50:32.380[1689763832380] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8090"]
-2023-07-19 12:50:32.417[1689763832417] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8090 (http) with context path ''
-2023-07-19 12:50:32.419[1689763832419] | INFO  | main       | o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
-2023-07-19 12:50:32.630[1689763832630] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
-2023-07-19 12:50:33.577[1689763833577] | INFO  | main       | c.e.b.BinanceApiApplication          - Started BinanceApiApplication in 7.766 seconds (process running for 8.995)
-2023-07-19 12:51:02.351[1689763862351] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
-2023-07-19 12:51:02.352[1689763862352] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
-2023-07-19 12:51:02.352[1689763862352] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
-2023-07-19 12:51:02.352[1689763862352] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Application is null : false
-2023-07-19 12:51:02.352[1689763862352] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
-2023-07-19 12:51:02.352[1689763862352] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Application version is -1: false
-2023-07-19 12:51:02.352[1689763862352] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
-2023-07-19 12:51:02.362[1689763862362] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - The response status is 200
-2023-07-19 12:55:31.398[1689764131398] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-07-19 13:00:31.413[1689764431413] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-07-19 13:05:31.420[1689764731420] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-07-19 13:10:30.188[1689765030188] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-07-19 13:15:30.202[1689765330202] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-07-19 13:18:13.358[1689765493358] | INFO  | SpringApplicationShutdownHook | o.s.c.n.e.s.EurekaServiceRegistry    - Unregistering application BINANCE_API with eureka with status DOWN
-2023-07-19 13:18:13.359[1689765493359] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1689765493359, current=DOWN, previous=UP]
-2023-07-19 13:18:13.359[1689765493359] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
-2023-07-19 13:18:13.367[1689765493367] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
-2023-07-19 13:18:13.399[1689765493399] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Shutting down DiscoveryClient ...
-2023-07-19 13:18:16.421[1689765496421] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Unregistering ...
-2023-07-19 13:18:16.427[1689765496427] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - deregister  status: 200
-2023-07-19 13:18:16.481[1689765496481] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Completed shut down of DiscoveryClient
-2023-07-19 13:18:31.866[1689765511866] | INFO  | main       | c.e.b.BinanceApiApplication          - Starting BinanceApiApplication using Java 17 with PID 13304 (C:\Users\serhi\Desktop\Projects\Futures Trading Util\binance_api\target\classes started by serhi in C:\Users\serhi\Desktop\Projects\Futures Trading Util)
-2023-07-19 13:18:31.870[1689765511870] | INFO  | main       | c.e.b.BinanceApiApplication          - No active profile set, falling back to 1 default profile: "default"
-2023-07-19 13:18:32.593[1689765512593] | INFO  | main       | o.s.cloud.context.scope.GenericScope - BeanFactory id=687d03dd-ccfb-33c2-95ef-90230cd14e3a
-2023-07-19 13:18:32.601[1689765512601] | WARN  | main       | o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'com.example.binance_api.client.DataClient' defined in null: Could not resolve placeholder 'application.config.database-url' in value "http://${application.config.database-url}"
-2023-07-19 13:18:32.612[1689765512612] | INFO  | main       | o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-07-19 13:18:32.632[1689765512632] | ERROR | main       | o.s.boot.SpringApplication           - Application run failed
-org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'com.example.binance_api.client.DataClient' defined in null: Could not resolve placeholder 'application.config.database-url' in value "http://${application.config.database-url}"
-	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:230)
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.processProperties(PropertySourcesPlaceholderConfigurer.java:198)
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:173)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:358)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:186)
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:771)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:589)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
-	at com.example.binance_api.BinanceApiApplication.main(BinanceApiApplication.java:12)
-Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'application.config.database-url' in value "http://${application.config.database-url}"
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
-	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:293)
-	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:219)
-	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:147)
-	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:85)
-	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:227)
-	... 13 common frames omitted
-2023-07-19 13:19:42.174[1689765582174] | INFO  | main       | c.e.b.BinanceApiApplication          - Starting BinanceApiApplication using Java 17 with PID 24568 (C:\Users\serhi\Desktop\Projects\Futures Trading Util\binance_api\target\classes started by serhi in C:\Users\serhi\Desktop\Projects\Futures Trading Util)
-2023-07-19 13:19:42.177[1689765582177] | INFO  | main       | c.e.b.BinanceApiApplication          - No active profile set, falling back to 1 default profile: "default"
-2023-07-19 13:19:43.157[1689765583157] | INFO  | main       | o.s.cloud.context.scope.GenericScope - BeanFactory id=687d03dd-ccfb-33c2-95ef-90230cd14e3a
-2023-07-19 13:19:43.447[1689765583447] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8090 (http)
-2023-07-19 13:19:43.475[1689765583475] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8090"]
-2023-07-19 13:19:43.478[1689765583478] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
-2023-07-19 13:19:43.478[1689765583478] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-19 13:19:43.634[1689765583634] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
-2023-07-19 13:19:43.635[1689765583635] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1410 ms
-2023-07-19 13:19:45.129[1689765585129] | INFO  | main       | o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
-2023-07-19 13:19:45.710[1689765585710] | WARN  | main       | o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-07-19 13:19:45.761[1689765585761] | INFO  | main       | o.s.c.n.eureka.InstanceInfoFactory   - Setting initial instance status as: STARTING
-2023-07-19 13:19:45.806[1689765585806] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Initializing Eureka in region us-east-1
-2023-07-19 13:19:45.810[1689765585810] | INFO  | main       | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-07-19 13:19:45.834[1689765585834] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
-2023-07-19 13:19:45.834[1689765585834] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
-2023-07-19 13:19:45.834[1689765585834] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
-2023-07-19 13:19:45.834[1689765585834] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application is null : false
-2023-07-19 13:19:45.834[1689765585834] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
-2023-07-19 13:19:45.834[1689765585834] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application version is -1: true
-2023-07-19 13:19:45.835[1689765585835] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
-2023-07-19 13:19:46.186[1689765586186] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - The response status is 200
-2023-07-19 13:19:46.192[1689765586192] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Starting heartbeat executor: renew interval is: 30
-2023-07-19 13:19:46.197[1689765586197] | INFO  | main       | c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-07-19 13:19:46.209[1689765586209] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Discovery Client initialized at timestamp 1689765586208 with initial instances count: 1
-2023-07-19 13:19:46.210[1689765586210] | INFO  | main       | o.s.c.n.e.s.EurekaServiceRegistry    - Registering application BINANCE_API with eureka with status UP
-2023-07-19 13:19:46.211[1689765586211] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1689765586211, current=UP, previous=STARTING]
-2023-07-19 13:19:46.212[1689765586212] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8090"]
-2023-07-19 13:19:46.213[1689765586213] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
-2023-07-19 13:19:46.234[1689765586234] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8090 (http) with context path ''
-2023-07-19 13:19:46.236[1689765586236] | INFO  | main       | o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
-2023-07-19 13:19:46.258[1689765586258] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
-2023-07-19 13:19:46.760[1689765586760] | INFO  | main       | c.e.b.BinanceApiApplication          - Started BinanceApiApplication in 5.984 seconds (process running for 7.583)
-2023-07-19 13:20:31.508[1689765631508] | INFO  | SpringApplicationShutdownHook | o.s.c.n.e.s.EurekaServiceRegistry    - Unregistering application BINANCE_API with eureka with status DOWN
-2023-07-19 13:20:31.508[1689765631508] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1689765631508, current=DOWN, previous=UP]
-2023-07-19 13:20:31.508[1689765631508] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
-2023-07-19 13:20:31.514[1689765631514] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
-2023-07-19 13:20:31.563[1689765631563] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Shutting down DiscoveryClient ...
-2023-07-19 13:20:34.574[1689765634574] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Unregistering ...
-2023-07-19 13:20:34.578[1689765634578] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - deregister  status: 200
-2023-07-19 13:20:34.634[1689765634634] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Completed shut down of DiscoveryClient
-2023-07-19 13:20:39.936[1689765639936] | INFO  | main       | c.e.b.BinanceApiApplication          - Starting BinanceApiApplication using Java 17 with PID 4864 (C:\Users\serhi\Desktop\Projects\Futures Trading Util\binance_api\target\classes started by serhi in C:\Users\serhi\Desktop\Projects\Futures Trading Util)
-2023-07-19 13:20:39.940[1689765639940] | INFO  | main       | c.e.b.BinanceApiApplication          - No active profile set, falling back to 1 default profile: "default"
-2023-07-19 13:20:40.718[1689765640718] | INFO  | main       | o.s.cloud.context.scope.GenericScope - BeanFactory id=687d03dd-ccfb-33c2-95ef-90230cd14e3a
-2023-07-19 13:20:41.097[1689765641097] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8090 (http)
-2023-07-19 13:20:41.106[1689765641106] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8090"]
-2023-07-19 13:20:41.108[1689765641108] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
-2023-07-19 13:20:41.109[1689765641109] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-19 13:20:41.234[1689765641234] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
-2023-07-19 13:20:41.234[1689765641234] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1248 ms
-2023-07-19 13:20:42.346[1689765642346] | INFO  | main       | o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
-2023-07-19 13:20:42.900[1689765642900] | WARN  | main       | o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-07-19 13:20:42.946[1689765642946] | INFO  | main       | o.s.c.n.eureka.InstanceInfoFactory   - Setting initial instance status as: STARTING
-2023-07-19 13:20:42.989[1689765642989] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Initializing Eureka in region us-east-1
-2023-07-19 13:20:42.994[1689765642994] | INFO  | main       | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-07-19 13:20:43.020[1689765643020] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
-2023-07-19 13:20:43.020[1689765643020] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
-2023-07-19 13:20:43.021[1689765643021] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
-2023-07-19 13:20:43.021[1689765643021] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application is null : false
-2023-07-19 13:20:43.021[1689765643021] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
-2023-07-19 13:20:43.021[1689765643021] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application version is -1: true
-2023-07-19 13:20:43.021[1689765643021] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
-2023-07-19 13:20:43.656[1689765643656] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - The response status is 200
-2023-07-19 13:20:43.665[1689765643665] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Starting heartbeat executor: renew interval is: 30
-2023-07-19 13:20:43.674[1689765643674] | INFO  | main       | c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-07-19 13:20:43.718[1689765643718] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Discovery Client initialized at timestamp 1689765643716 with initial instances count: 2
-2023-07-19 13:20:43.721[1689765643721] | INFO  | main       | o.s.c.n.e.s.EurekaServiceRegistry    - Registering application BINANCE_API with eureka with status UP
-2023-07-19 13:20:43.722[1689765643722] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1689765643722, current=UP, previous=STARTING]
-2023-07-19 13:20:43.725[1689765643725] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8090"]
-2023-07-19 13:20:43.725[1689765643725] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
-2023-07-19 13:20:43.757[1689765643757] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8090 (http) with context path ''
-2023-07-19 13:20:43.760[1689765643760] | INFO  | main       | o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
-2023-07-19 13:20:43.809[1689765643809] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
-2023-07-19 13:20:44.851[1689765644851] | INFO  | main       | c.e.b.BinanceApiApplication          - Started BinanceApiApplication in 6.167 seconds (process running for 7.578)
-2023-07-19 13:20:57.531[1689765657531] | INFO  | http-nio-8090-exec-3 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-19 13:20:57.531[1689765657531] | INFO  | http-nio-8090-exec-3 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
-2023-07-19 13:20:57.533[1689765657533] | INFO  | http-nio-8090-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
-2023-07-19 13:20:59.934[1689765659934] | WARN  | http-nio-8090-exec-1 | o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
-2023-07-19 13:21:04.138[1689765664138] | ERROR | http-nio-8090-exec-2 | o.a.c.c.C.[.[.[.[dispatcherServlet]  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: feign.FeignException$NotFound: [404 Not Found] during [GET] to [http://localhost:8222/api/v1/data/] [DataClient#getAll()]: [{"timestamp":"2023-07-19T11:21:04.086+00:00","status":404,"error":"Not Found","path":"/api/v1/data/"}]] with root cause
-feign.FeignException$NotFound: [404 Not Found] during [GET] to [http://localhost:8222/api/v1/data/] [DataClient#getAll()]: [{"timestamp":"2023-07-19T11:21:04.086+00:00","status":404,"error":"Not Found","path":"/api/v1/data/"}]
-	at feign.FeignException.clientErrorStatus(FeignException.java:228)
-	at feign.FeignException.errorStatus(FeignException.java:203)
-	at feign.FeignException.errorStatus(FeignException.java:194)
-	at feign.FeignException.errorStatus(FeignException.java:171)
-	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
-	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
-	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
-	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:116)
-	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:72)
-	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:98)
-	at jdk.proxy2/jdk.proxy2.$Proxy74.getAll(Unknown Source)
-	at com.example.binance_api.components.TestController.getAll(TestController.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-19 13:21:55.248[1689765715248] | INFO  | SpringApplicationShutdownHook | o.s.c.n.e.s.EurekaServiceRegistry    - Unregistering application BINANCE_API with eureka with status DOWN
-2023-07-19 13:21:55.248[1689765715248] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1689765715248, current=DOWN, previous=UP]
-2023-07-19 13:21:55.248[1689765715248] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
-2023-07-19 13:21:55.253[1689765715253] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
-2023-07-19 13:21:55.289[1689765715289] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Shutting down DiscoveryClient ...
-2023-07-19 13:21:58.306[1689765718306] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Unregistering ...
-2023-07-19 13:21:58.311[1689765718311] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - deregister  status: 200
-2023-07-19 13:21:58.359[1689765718359] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Completed shut down of DiscoveryClient
-2023-07-19 13:22:04.966[1689765724966] | INFO  | main       | c.e.b.BinanceApiApplication          - Starting BinanceApiApplication using Java 17 with PID 5200 (C:\Users\serhi\Desktop\Projects\Futures Trading Util\binance_api\target\classes started by serhi in C:\Users\serhi\Desktop\Projects\Futures Trading Util)
-2023-07-19 13:22:04.970[1689765724970] | INFO  | main       | c.e.b.BinanceApiApplication          - No active profile set, falling back to 1 default profile: "default"
-2023-07-19 13:22:05.771[1689765725771] | INFO  | main       | o.s.cloud.context.scope.GenericScope - BeanFactory id=687d03dd-ccfb-33c2-95ef-90230cd14e3a
-2023-07-19 13:22:06.035[1689765726035] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8090 (http)
-2023-07-19 13:22:06.041[1689765726041] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8090"]
-2023-07-19 13:22:06.043[1689765726043] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
-2023-07-19 13:22:06.044[1689765726044] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-19 13:22:06.173[1689765726173] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
-2023-07-19 13:22:06.173[1689765726173] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1154 ms
-2023-07-19 13:22:07.255[1689765727255] | INFO  | main       | o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
-2023-07-19 13:22:07.825[1689765727825] | WARN  | main       | o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-07-19 13:22:07.875[1689765727875] | INFO  | main       | o.s.c.n.eureka.InstanceInfoFactory   - Setting initial instance status as: STARTING
-2023-07-19 13:22:07.919[1689765727919] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Initializing Eureka in region us-east-1
-2023-07-19 13:22:07.924[1689765727924] | INFO  | main       | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-07-19 13:22:07.952[1689765727952] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
-2023-07-19 13:22:07.952[1689765727952] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
-2023-07-19 13:22:07.952[1689765727952] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
-2023-07-19 13:22:07.952[1689765727952] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application is null : false
-2023-07-19 13:22:07.952[1689765727952] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
-2023-07-19 13:22:07.952[1689765727952] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application version is -1: true
-2023-07-19 13:22:07.952[1689765727952] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
-2023-07-19 13:22:08.336[1689765728336] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - The response status is 200
-2023-07-19 13:22:08.342[1689765728342] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Starting heartbeat executor: renew interval is: 30
-2023-07-19 13:22:08.348[1689765728348] | INFO  | main       | c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-07-19 13:22:08.362[1689765728362] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Discovery Client initialized at timestamp 1689765728361 with initial instances count: 1
-2023-07-19 13:22:08.363[1689765728363] | INFO  | main       | o.s.c.n.e.s.EurekaServiceRegistry    - Registering application BINANCE_API with eureka with status UP
-2023-07-19 13:22:08.365[1689765728365] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1689765728365, current=UP, previous=STARTING]
-2023-07-19 13:22:08.367[1689765728367] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
-2023-07-19 13:22:08.367[1689765728367] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8090"]
-2023-07-19 13:22:08.390[1689765728390] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8090 (http) with context path ''
-2023-07-19 13:22:08.391[1689765728391] | INFO  | main       | o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
-2023-07-19 13:22:08.414[1689765728414] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
-2023-07-19 13:22:08.920[1689765728920] | INFO  | main       | c.e.b.BinanceApiApplication          - Started BinanceApiApplication in 5.148 seconds (process running for 6.412)
-2023-07-19 13:23:01.761[1689765781761] | INFO  | http-nio-8090-exec-1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-19 13:23:01.761[1689765781761] | INFO  | http-nio-8090-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
-2023-07-19 13:23:01.762[1689765781762] | INFO  | http-nio-8090-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2023-07-21 14:49:06.098[1689943746098] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Completed shut down of DiscoveryClient

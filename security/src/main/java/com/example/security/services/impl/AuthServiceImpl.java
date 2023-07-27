@@ -43,6 +43,7 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public void activate(String code, UsernameModel username) {
         Users user = dataClient.getUserByName(username.getUsername());
+        System.out.println(user.toString());
         if (user.getActivationCode().equals(code)) {
             user.setActivationCode(null);
             user.setVerified(true);
