@@ -60,6 +60,6 @@ public class LoginTextHandler extends UserRequestHandler {
 
     @Override
     public boolean isGlobal() {
-        return true;
+        return false;
     }
 }
