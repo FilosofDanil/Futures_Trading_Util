@@ -15,4 +15,11 @@ public class GlobalExceptionHandler {
         return e.getMessage();
     }
 
+    @ExceptionHandler(NullPointerException.class)
+    public String handleNullPointerStatusException(NullPointerException e, HttpServletResponse response) {
+        response.setStatus(400);
+        e.printStackTrace();
+        return e.getMessage();
+    }
+
 }
