@@ -29,6 +29,9 @@ public class UserDBAService implements DBAService<Users> {
 
     @Override
     public Users create(Users user) {
+        if (userRepo.findUsersByProfileName(user.getProfileName()) != null || userRepo.findUsersByEmail(user.getEmail()) != null) {
+            throw new IllegalArgumentException("Invalid data, or these resource is already exist!");
+        }
         userRepo.save(user);
         return user;
     }
