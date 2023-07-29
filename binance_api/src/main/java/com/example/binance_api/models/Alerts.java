@@ -2,9 +2,11 @@ package com.example.binance_api.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
 import java.util.Date;
 
+@Data
 public class Alerts {
     @JsonProperty("id")
     private Long id;
