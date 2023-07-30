@@ -15,11 +15,11 @@ public class Alerts {
     @JsonProperty("price")
     private Double price;
     @JsonProperty("alert_date")
-    private Date date;
+    private Date alert_date;
     @JsonProperty("cross_date")
     private Date cross_date;
     @JsonProperty("crossed")
     private Boolean crossed;
-    @JsonIgnore
-    private Users user;
+    @JsonProperty("user_id")
+    private Long user_id;
 }
