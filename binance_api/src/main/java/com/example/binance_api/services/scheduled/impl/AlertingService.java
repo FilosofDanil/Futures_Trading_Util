@@ -34,4 +34,10 @@ public class AlertingService implements IScheduled {
             });
         });
     }
+
+    private static class DoubleParser {
+        private static Double parse(String toParse) {
+            return null;
+        }
+    }
 }
