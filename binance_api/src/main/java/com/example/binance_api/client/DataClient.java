@@ -1,6 +1,7 @@
 package com.example.binance_api.client;
 
 import com.example.binance_api.models.Alerts;
+import com.example.binance_api.models.Users;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,4 +19,6 @@ public interface DataClient {
     void updateAlert(@PathVariable("id") Long id, @RequestBody Alerts alert);
     @PostMapping("/alerts/")
     void createAlert(@RequestBody Alerts alert);
+    @GetMapping("/users/")
+    List<Users> getAllUsers();
 }
