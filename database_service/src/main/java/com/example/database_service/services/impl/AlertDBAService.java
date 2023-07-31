@@ -36,11 +36,12 @@ public class AlertDBAService implements DBAService<Alerts> {
     @Override
     public void update(Alerts alerts, Long id) {
         Alerts alert = alertRepo.findById(id).get();
-        alert.setDate(alert.getDate());
-        alert.setPrice(alert.getPrice());
-        alert.setTicker(alert.getTicker());
-        alert.setUser(alert.getUser());
-        alert.setCross_date(alert.getCross_date());
+        alert.setDate(alerts.getDate());
+        alert.setPrice(alerts.getPrice());
+        alert.setTicker(alerts.getTicker());
+        alert.setUser(alerts.getUser());
+        alert.setCross_date(alerts.getCross_date());
+        alert.setCurrent_price(alerts.getCurrent_price());
         alertRepo.save(alert);
     }
 
