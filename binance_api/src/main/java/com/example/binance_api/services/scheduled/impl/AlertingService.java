@@ -39,7 +39,32 @@ public class AlertingService implements IScheduled {
     }
 
     private static class DoubleParser {
-        private static Double parse(String toParse) {
+        private static String extractDigits(String input) {
+            return input.replaceAll("\"", "");
+        }
+        private static Double extractPrice(String jsonString) {
+            // Remove curly braces and whitespace characters
+            jsonString = jsonString.replaceAll("\\{|\\}|\\s", "");
+
+            // Split the string into key-value pairs
+            String[] keyValuePairs = jsonString.split(",");
+            // Search for the "price" parameter and extract its value
+            for (String pair : keyValuePairs) {
+                String[] keyValue = pair.split(":");
+                System.out.println(keyValue[0] + keyValue[1]);
+                if (keyValue.length == 2 && keyValue[0].equals("\"price\"")) {
+                    try {
+                        String result = extractDigits(keyValue[1]);
+                        System.out.println("Extracted digits: " + result);
+                        return Double.parseDouble(result);
+                    } catch (NumberFormatException e) {
+                        // If there's an error parsing the double value, return null
+                        return null;
+                    }
+                }
+            }
+
+            // If the "price" parameter is not found, return null
             return null;
         }
     }
