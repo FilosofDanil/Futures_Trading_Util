@@ -45,7 +45,6 @@ public class AlertingService implements IScheduled {
                     alert.setCrossed(true);
                     alertService.update(user, alert, alert.getId());
                 }
-                System.out.println(alert);
             });
         });
 
