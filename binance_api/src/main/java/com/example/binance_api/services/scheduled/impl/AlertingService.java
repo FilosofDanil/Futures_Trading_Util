@@ -32,6 +32,9 @@ public class AlertingService implements IScheduled {
                 if (currentPrice == null) {
                     throw new NullPointerException("Something wrong with ticker price. Or this ticker is undefined");
                 }
+                if(alert.getCrossed()){
+                    return;
+                }
                 if (Objects.equals(currentPrice, alert.getPrice())) {
                     alert.setCrossed(true);
                     alertService.update(user, alert, alert.getId());
@@ -42,6 +45,7 @@ public class AlertingService implements IScheduled {
                     alert.setCrossed(true);
                     alertService.update(user, alert, alert.getId());
                 }
+                System.out.println(alert);
             });
         });
 
