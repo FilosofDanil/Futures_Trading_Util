@@ -36,7 +36,6 @@ public class AlertDBAService implements DBAService<Alerts> {
     @Override
     public void update(Alerts alerts, Long id) {
         Alerts alert = alertRepo.findById(id).get();
-        alert.setDate(alerts.getDate());
         alert.setPrice(alerts.getPrice());
         alert.setTicker(alerts.getTicker());
         alert.setUser(alerts.getUser());

@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -37,14 +38,13 @@ public class AlertingService implements IScheduled {
                 }
                 if (Objects.equals(currentPrice, alert.getPrice())) {
                     alert.setCrossed(true);
-                    alertService.update(user, alert, alert.getId());
                 } else if (alert.getCurrent_price() < alert.getPrice() && currentPrice > alert.getPrice()) {
                     alert.setCrossed(true);
-                    alertService.update(user, alert, alert.getId());
                 } else if (alert.getCurrent_price() > alert.getPrice() && currentPrice < alert.getPrice()) {
                     alert.setCrossed(true);
-                    alertService.update(user, alert, alert.getId());
                 }
+                alert.setCross_date(new Date());
+                alertService.update(user, alert, alert.getId());
             });
         });
 
@@ -64,11 +64,9 @@ public class AlertingService implements IScheduled {
             // Search for the "price" parameter and extract its value
             for (String pair : keyValuePairs) {
                 String[] keyValue = pair.split(":");
-                System.out.println(keyValue[0] + keyValue[1]);
                 if (keyValue.length == 2 && keyValue[0].equals("\"price\"")) {
                     try {
                         String result = extractDigits(keyValue[1]);
-                        System.out.println("Extracted digits: " + result);
                         return Double.parseDouble(result);
                     } catch (NumberFormatException e) {
                         // If there's an error parsing the double value, return null
