@@ -28,8 +28,17 @@ public class AlertingService implements IScheduled {
         users.forEach(user -> {
             List<Alerts> alerts = alertService.getAll(user);
             alerts.forEach(alert -> {
-                Double currentPrice = 0.0;
+                Double currentPrice = DoubleParser.extractPrice(priceComponent.getPrice(alert.getTicker()));
+                if (currentPrice == null) {
+                    throw new NullPointerException("Something wrong with ticker price. Or this ticker is undefined");
+                }
                 if (Objects.equals(currentPrice, alert.getPrice())) {
+                    alert.setCrossed(true);
+                    alertService.update(user, alert, alert.getId());
+                } else if (alert.getCurrent_price() < alert.getPrice() && currentPrice > alert.getPrice()) {
+                    alert.setCrossed(true);
+                    alertService.update(user, alert, alert.getId());
+                } else if (alert.getCurrent_price() > alert.getPrice() && currentPrice < alert.getPrice()) {
                     alert.setCrossed(true);
                     alertService.update(user, alert, alert.getId());
                 }
@@ -42,6 +51,7 @@ public class AlertingService implements IScheduled {
         private static String extractDigits(String input) {
             return input.replaceAll("\"", "");
         }
+
         private static Double extractPrice(String jsonString) {
             // Remove curly braces and whitespace characters
             jsonString = jsonString.replaceAll("\\{|\\}|\\s", "");

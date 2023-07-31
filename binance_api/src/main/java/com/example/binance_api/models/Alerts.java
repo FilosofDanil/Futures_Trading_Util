@@ -14,6 +14,8 @@ public class Alerts {
     private String ticker;
     @JsonProperty("price")
     private Double price;
+    @JsonProperty("current_price")
+    private Double current_price;
     @JsonProperty("alert_date")
     private Date alert_date;
     @JsonProperty("cross_date")
