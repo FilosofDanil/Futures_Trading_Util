@@ -27,7 +27,7 @@ public class Alerts {
     @Column(name = "current_price")
     private Double current_price;
     @Column(name = "alert_date")
-    private Date date;
+    private Date alert_date;
     @Column(name = "cross_date")
     private Date cross_date;
     @Column(name = "crossed")
