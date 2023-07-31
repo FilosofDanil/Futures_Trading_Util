@@ -13,9 +13,9 @@ public interface DataClient {
     List<Alerts> getAllAlerts();
     @GetMapping("/alerts/{id}")
     Alerts getAlertById(@PathVariable("id") Long id);
-    @PutMapping("/alerts/{id}")
-    Alerts deleteAlert(@PathVariable("id") Long id);
     @DeleteMapping("/alerts/{id}")
+    Alerts deleteAlert(@PathVariable("id") Long id);
+    @PutMapping("/alerts/{id}")
     void updateAlert(@PathVariable("id") Long id, @RequestBody Alerts alert);
     @PostMapping("/alerts/")
     void createAlert(@RequestBody Alerts alert);

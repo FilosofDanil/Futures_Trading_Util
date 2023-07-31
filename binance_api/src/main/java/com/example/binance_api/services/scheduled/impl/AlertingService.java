@@ -7,6 +7,7 @@ import com.example.binance_api.services.AlertService;
 import com.example.binance_api.services.impl.UserServiceBean;
 import com.example.binance_api.services.scheduled.IScheduled;
 import lombok.RequiredArgsConstructor;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,6 +22,7 @@ public class AlertingService implements IScheduled {
 
 
     @Override
+    @Scheduled(cron = "*/1 * * * * *")
     public void scheduledTask() {
         List<Users> users = userService.getAll();
         users.forEach(user -> {
@@ -33,6 +35,7 @@ public class AlertingService implements IScheduled {
                 }
             });
         });
+
     }
 
     private static class DoubleParser {

@@ -20,6 +20,6 @@ public class Alerts {
     private Date cross_date;
     @JsonProperty("crossed")
     private Boolean crossed;
-    @JsonProperty("user_id")
-    private Long user_id;
+    @JsonProperty("user")
+    private Users user;
 }
