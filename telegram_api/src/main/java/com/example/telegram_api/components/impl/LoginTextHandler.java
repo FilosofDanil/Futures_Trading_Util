@@ -30,7 +30,6 @@ public class LoginTextHandler extends UserRequestHandler {
 
     @Override
     public void handle(UserRequest request) {
-        System.out.println("fefrer");
         try {
             UserSession session = request.getUserSession();
             if (!session.getAuth() && session.getState().equals(States.LOGIN_WAIT_PASSWORD)) {
