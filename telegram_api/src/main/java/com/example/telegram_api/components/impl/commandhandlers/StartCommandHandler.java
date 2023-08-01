@@ -1,4 +1,4 @@
-package com.example.telegram_api.components.impl;
+package com.example.telegram_api.components.impl.commandhandlers;
 
 import com.example.telegram_api.client.DataClient;
 import com.example.telegram_api.enums.States;

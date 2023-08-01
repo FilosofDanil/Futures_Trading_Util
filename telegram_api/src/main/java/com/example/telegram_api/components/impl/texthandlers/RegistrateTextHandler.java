@@ -1,4 +1,4 @@
-package com.example.telegram_api.components.impl;
+package com.example.telegram_api.components.impl.texthandlers;
 
 import com.example.telegram_api.components.UserRequestHandler;
 import com.example.telegram_api.enums.States;

@@ -1,9 +1,10 @@
-package com.example.telegram_api.components.impl;
+package com.example.telegram_api.components.impl.commandhandlers;
 
 import com.example.telegram_api.components.UserRequestHandler;
 import com.example.telegram_api.enums.States;
 import com.example.telegram_api.models.UserRequest;
 import com.example.telegram_api.models.UserSession;
+import com.example.telegram_api.models.Users;
 import com.example.telegram_api.services.functional.RegistryService;
 import com.example.telegram_api.services.telegram.SessionService;
 import com.example.telegram_api.services.telegram.TelegramBotService;
@@ -12,12 +13,14 @@ import org.springframework.stereotype.Component;
 
 @Component
 @AllArgsConstructor
-public class LoginHandler extends UserRequestHandler {
-    private static final String command = "/login";
+public class RegistrateHandler extends UserRequestHandler {
+    private static final String command = "/signup";
 
     private final SessionService sessionService;
 
     private final TelegramBotService telegramService;
+
+    private final RegistryService registryService;
 
     @Override
     public boolean isApplicable(UserRequest request) {
@@ -28,18 +31,10 @@ public class LoginHandler extends UserRequestHandler {
     public void handle(UserRequest request) {
         if (request.getUserSession().getState() != null) {
             UserSession session = request.getUserSession();
-            if (session.getAuth()) {
-                session.setState(States.SUCCESSFULLY_LOGIN);
-                sessionService.saveSession(request.getChatId(), session);
-                telegramService.sendMessage(request.getChatId(), "You're already authorized in the system");
-                return;
-            }
-            if (!session.getAuth()) {
-                session.setState(States.LOGIN_WAIT_PASSWORD);
-                sessionService.saveSession(request.getChatId(), session);
-                telegramService.sendMessage(request.getChatId(), "Now write down your password. ");
-            }
-        } else {
+            session.setState(States.WAITING_FOR_MAIL);
+            sessionService.saveSession(request.getChatId(), session);
+            telegramService.sendMessage(request.getChatId(), "Send your mail⤵️");
+        } else{
             telegramService.sendMessage(request.getChatId(), "You need to start bot -> /start");
         }
     }
