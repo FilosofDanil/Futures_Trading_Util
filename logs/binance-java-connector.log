@@ -5754,3 +5754,378 @@ com.binance.connector.futures.client.exceptions.BinanceConnectorException: [Resp
 2023-08-01 21:13:56.010[1690917236010] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
 2023-08-01 21:13:57.007[1690917237007] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
 2023-08-01 21:13:58.018[1690917238018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:13:59.020[1690917239020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:00.044[1690917240044] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:01.019[1690917241019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:02.019[1690917242019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:03.012[1690917243012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:04.012[1690917244012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:05.016[1690917245016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:06.012[1690917246012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:07.007[1690917247007] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:08.006[1690917248006] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:09.015[1690917249015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:10.006[1690917250006] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:11.020[1690917251020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:12.009[1690917252009] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:13.016[1690917253016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:14.010[1690917254010] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:15.008[1690917255008] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:16.008[1690917256008] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:17.020[1690917257020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:18.019[1690917258019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:19.007[1690917259007] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:20.011[1690917260011] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:21.019[1690917261019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:22.007[1690917262007] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:23.010[1690917263010] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:24.015[1690917264015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:25.013[1690917265013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:26.017[1690917266017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:27.016[1690917267016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:28.013[1690917268013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:29.007[1690917269007] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:30.017[1690917270017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:31.009[1690917271009] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:32.008[1690917272008] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:33.012[1690917273012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:34.009[1690917274009] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:35.009[1690917275009] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:36.007[1690917276007] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:37.008[1690917277008] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:38.009[1690917278009] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:39.012[1690917279012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:40.021[1690917280021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:41.009[1690917281009] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:42.024[1690917282024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:43.015[1690917283015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:44.012[1690917284012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:45.015[1690917285015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:46.009[1690917286009] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:47.009[1690917287009] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:48.007[1690917288007] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:49.020[1690917289020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:50.008[1690917290008] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:51.021[1690917291021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:52.020[1690917292020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:53.020[1690917293020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:54.019[1690917294019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:55.007[1690917295007] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:56.015[1690917296015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:57.019[1690917297019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:58.012[1690917298012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:14:59.010[1690917299010] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:00.020[1690917300020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:01.014[1690917301014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:02.012[1690917302012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:03.010[1690917303010] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:04.036[1690917304036] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:05.013[1690917305013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:06.015[1690917306015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:07.016[1690917307016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:08.022[1690917308022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:09.007[1690917309007] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:10.013[1690917310013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:11.017[1690917311017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:12.014[1690917312014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:13.015[1690917313015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:14.020[1690917314020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:15.012[1690917315012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:16.012[1690917316012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:17.011[1690917317011] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:18.013[1690917318013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:19.017[1690917319017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:20.013[1690917320013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:21.010[1690917321010] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:22.020[1690917322020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:23.023[1690917323023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:24.007[1690917324007] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:25.005[1690917325005] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:26.037[1690917326037] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
+2023-08-01 21:15:26.656[1690917326656] | INFO  | SpringApplicationShutdownHook | o.s.c.n.e.s.EurekaServiceRegistry    - Unregistering application BINANCE_API with eureka with status DOWN
+2023-08-01 21:15:26.657[1690917326657] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1690917326657, current=DOWN, previous=UP]
+2023-08-01 21:15:26.657[1690917326657] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
+2023-08-01 21:15:26.671[1690917326671] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:101)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:87)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
+	... 21 more
+
+2023-08-01 21:15:26.671[1690917326671] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-08-01 21:15:26.686[1690917326686] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:101)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:87)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
+	... 22 more
+
+2023-08-01 21:15:26.686[1690917326686] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-08-01 21:15:26.687[1690917326687] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-01 21:15:26.690[1690917326690] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-01 21:15:26.711[1690917326711] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Shutting down DiscoveryClient ...
+2023-08-01 21:15:29.719[1690917329719] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Unregistering ...
+2023-08-01 21:15:29.737[1690917329737] | INFO  | SpringApplicationShutdownHook | c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:425)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:383)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:213)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:192)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:185)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:201)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1182)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:173)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1026)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:139)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:101)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:87)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
+	... 40 more
+
+2023-08-01 21:15:29.737[1690917329737] | WARN  | SpringApplicationShutdownHook | c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-08-01 21:15:29.738[1690917329738] | ERROR | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:425)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:383)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:213)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:192)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:185)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:201)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1182)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:173)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1026)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:139)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-01 21:15:29.802[1690917329802] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Completed shut down of DiscoveryClient
