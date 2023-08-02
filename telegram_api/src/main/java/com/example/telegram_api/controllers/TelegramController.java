@@ -47,6 +47,7 @@ public class TelegramController extends TelegramLongPollingBot {
                 .userSession(session)
                 .build();
         userService.saveUser(username, chatId);
+        System.out.println(session);
         dispatcher.dispatch(userRequest);
 //
 //        var response = new SendMessage();
