@@ -16,9 +16,9 @@ public interface BinanceClient {
     @GetMapping("/{id}")
     Alerts getById(@RequestBody Users user, @PathVariable("id") Long id);
     @PostMapping("/alerts")
-    Alerts create(@RequestBody Users user, @RequestBody Alerts alerts);
+    Alerts create( @RequestBody Alerts alerts);
     @PutMapping("/{id}")
-    Alerts update(@RequestBody Users user, @PathVariable("id") Long id, @RequestBody Alerts alerts);
+    Alerts update(@PathVariable("id") Long id, @RequestBody Alerts alerts);
     @DeleteMapping("/{id}")
     void delete(@RequestBody Users user, @PathVariable("id") Long id);
 }
