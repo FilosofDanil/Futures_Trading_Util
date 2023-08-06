@@ -1,8 +1,6 @@
 package com.example.telegram_api.controllers;
 
-import com.example.telegram_api.models.Message;
-import com.example.telegram_api.models.UserSession;
-import com.example.telegram_api.services.telegram.SessionService;
+import com.example.telegram_api.models.telegram_entities.Message;
 import com.example.telegram_api.services.telegram.TelegramBotService;
 import com.example.telegram_api.services.telegram.UserService;
 import lombok.RequiredArgsConstructor;

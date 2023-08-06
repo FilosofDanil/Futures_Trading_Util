@@ -1,8 +1,8 @@
 package com.example.telegram_api.client;
 
-import com.example.telegram_api.models.LoginRequest;
-import com.example.telegram_api.models.UsernameModel;
-import com.example.telegram_api.models.Users;
+import com.example.telegram_api.models.telegram_entities.LoginRequest;
+import com.example.telegram_api.models.telegram_entities.UsernameModel;
+import com.example.telegram_api.models.entities.Users;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;

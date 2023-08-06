@@ -1,16 +1,11 @@
 package com.example.telegram_api.components.impl.texthandlers.registration;
 
 import com.example.telegram_api.components.abstr.TextHandler;
-import com.example.telegram_api.components.abstr.UserRequestHandler;
 import com.example.telegram_api.enums.States;
-import com.example.telegram_api.models.UserRequest;
-import com.example.telegram_api.models.UserSession;
-import com.example.telegram_api.models.UsernameModel;
-import com.example.telegram_api.models.Users;
-import com.example.telegram_api.services.functional.RegistryService;
+import com.example.telegram_api.models.telegram_entities.UserRequest;
+import com.example.telegram_api.models.telegram_entities.UserSession;
 import com.example.telegram_api.services.telegram.SessionService;
 import com.example.telegram_api.services.telegram.TelegramBotService;
-import com.example.telegram_api.util.ResponseParser;
 import feign.FeignException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;

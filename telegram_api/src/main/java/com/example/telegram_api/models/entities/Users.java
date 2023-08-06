@@ -1,4 +1,4 @@
-package com.example.telegram_api.models;
+package com.example.telegram_api.models.entities;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;

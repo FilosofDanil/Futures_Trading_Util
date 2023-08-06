@@ -1,4 +1,4 @@
-package com.example.telegram_api.models;
+package com.example.telegram_api.models.telegram_entities;
 
 import lombok.Builder;
 import lombok.Data;
