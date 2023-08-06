@@ -34,6 +34,10 @@ public class GlobalTextHandler extends UserRequestHandler {
     public void handle(UserRequest request) {
         try {
             UserSession session = request.getUserSession();
+            if(!session.getAuth()  && session.getState()!= States.LOGIN_WAIT_PASSWORD){
+                telegramService.sendMessage(request.getChatId(), "You're need to login(1-2 mins)");
+                return;
+            }
             for (TextHandler textHandler : textHandlers) {
                 if(textHandler.getApplicableState().equals(session.getState())){
                     textHandler.handle(request);

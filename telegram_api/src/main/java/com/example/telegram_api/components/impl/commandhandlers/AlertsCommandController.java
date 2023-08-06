@@ -30,6 +30,10 @@ public class AlertsCommandController extends UserRequestHandler {
     @Override
     public void handle(UserRequest request) {
         UserSession session = request.getUserSession();
+        if(!session.getAuth()){
+            telegramService.sendMessage(request.getChatId(), "You're need to login(1-2 mins)");
+            return;
+        }
         session.setState(States.ALERT_MENU);
         sessionService.saveSession(request.getChatId(), session);
         List<String> rows = List.of("⚠ My alerts", " ➕ Place alert");
