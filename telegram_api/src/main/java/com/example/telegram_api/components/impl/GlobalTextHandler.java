@@ -1,51 +1,44 @@
-package com.example.telegram_api.components.impl.texthandlers;
+package com.example.telegram_api.components.impl;
 
-import com.example.telegram_api.components.UserRequestHandler;
+import com.example.telegram_api.components.abstr.TextHandler;
+import com.example.telegram_api.components.abstr.UserRequestHandler;
 import com.example.telegram_api.enums.States;
-import com.example.telegram_api.models.LoginRequest;
 import com.example.telegram_api.models.UserRequest;
 import com.example.telegram_api.models.UserSession;
-import com.example.telegram_api.services.functional.RegistryService;
 import com.example.telegram_api.services.telegram.SessionService;
 import com.example.telegram_api.services.telegram.TelegramBotService;
 import com.example.telegram_api.util.ResponseParser;
 import feign.FeignException;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
-@AllArgsConstructor
-public class LoginTextHandler extends UserRequestHandler {
+@RequiredArgsConstructor
+public class GlobalTextHandler extends UserRequestHandler {
+
+    private final List<TextHandler> textHandlers;
 
     private final SessionService sessionService;
 
     private final TelegramBotService telegramService;
-
-    private final RegistryService registryService;
 
     @Override
     public boolean isApplicable(UserRequest request) {
         return isTextMessage(request.getUpdate());
     }
 
+
     @Override
     public void handle(UserRequest request) {
         try {
             UserSession session = request.getUserSession();
-            if (!session.getAuth() && session.getState().equals(States.LOGIN_WAIT_PASSWORD)) {
-                LoginRequest loginRequest = LoginRequest.builder()
-                        .name(request.getUpdate().getMessage().getChat().getUserName())
-                        .password(request.getUpdate().getMessage().getText())
-                        .build();
-                if (registryService.login(loginRequest)) {
-                    session.setState(States.SUCCESSFULLY_LOGIN);
-                    session.setAuth(true);
-                    sessionService.saveSession(request.getChatId(), session);
-                    telegramService.sendMessage(request.getChatId(), "You've been successfully login, now you can use all bot functions!");
-                } else {
-                    telegramService.sendMessage(request.getChatId(), "Fail Authorization. Wrong password or username, please try again!");
+            for (TextHandler textHandler : textHandlers) {
+                if(textHandler.getApplicableState().equals(session.getState())){
+                    textHandler.handle(request);
+                    return;
                 }
-
             }
         } catch (FeignException ex) {
             if (ex.status() == 400) {

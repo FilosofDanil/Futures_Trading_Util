@@ -1,6 +1,6 @@
 package com.example.telegram_api.components.impl.commandhandlers;
 
-import com.example.telegram_api.components.UserRequestHandler;
+import com.example.telegram_api.components.abstr.UserRequestHandler;
 import com.example.telegram_api.enums.States;
 import com.example.telegram_api.models.UserRequest;
 import com.example.telegram_api.models.UserSession;
