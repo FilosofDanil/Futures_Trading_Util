@@ -27,13 +27,13 @@ public class AlertController {
     }
 
     @PostMapping("")
-    public ResponseEntity<Alerts> create(@RequestBody Users user, @RequestBody Alerts alerts) {
-        return new ResponseEntity<>(alertService.create(user, alerts), HttpStatus.OK);
+    public ResponseEntity<Alerts> create(@RequestBody Alerts alerts) {
+        return new ResponseEntity<>(alertService.create(alerts.getUser(), alerts), HttpStatus.OK);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Alerts> update(@RequestBody Users user, @PathVariable("id") Long id, @RequestBody Alerts alerts) {
-        return new ResponseEntity<>(alertService.update(user, alerts, id), HttpStatus.OK);
+    public ResponseEntity<Alerts> update(@PathVariable("id") Long id, @RequestBody Alerts alerts) {
+        return new ResponseEntity<>(alertService.update(alerts.getUser(), alerts, id), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")

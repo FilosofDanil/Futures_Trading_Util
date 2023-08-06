@@ -25,4 +25,6 @@ public class Alerts {
     private Date cross_date;
     @JsonProperty("crossed")
     private Boolean crossed;
+    @JsonProperty("user")
+    private Users user;
 }

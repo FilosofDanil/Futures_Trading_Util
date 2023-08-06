@@ -1,4 +1,4 @@
-package com.example.telegram_api.components.impl.texthandlers;
+package com.example.telegram_api.components.impl.texthandlers.binance_api;
 
 import com.example.telegram_api.components.abstr.TextHandler;
 import com.example.telegram_api.enums.States;
