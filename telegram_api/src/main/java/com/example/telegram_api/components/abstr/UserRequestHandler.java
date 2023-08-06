@@ -1,4 +1,4 @@
-package com.example.telegram_api.components;
+package com.example.telegram_api.components.abstr;
 
 import com.example.telegram_api.models.UserRequest;
 import org.telegram.telegrambots.meta.api.objects.Update;

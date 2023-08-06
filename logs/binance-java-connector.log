@@ -2201,3 +2201,157 @@
 2023-08-02 19:32:58.020[1690997578020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=compusdt
 2023-08-02 19:36:53.774[1690997813774] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
 2023-08-02 19:41:53.788[1690998113788] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 17:23:54.536[1691249034536] | INFO  | main       | c.e.b.BinanceApiApplication          - Starting BinanceApiApplication using Java 17 with PID 7408 (C:\Users\serhi\Desktop\Projects\Futures Trading Util\binance_api\target\classes started by serhi in C:\Users\serhi\Desktop\Projects\Futures Trading Util)
+2023-08-05 17:23:54.542[1691249034542] | INFO  | main       | c.e.b.BinanceApiApplication          - No active profile set, falling back to 1 default profile: "default"
+2023-08-05 17:23:56.190[1691249036190] | INFO  | main       | o.s.cloud.context.scope.GenericScope - BeanFactory id=43322444-284a-3d3a-993a-546c43d90254
+2023-08-05 17:23:56.637[1691249036637] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8090 (http)
+2023-08-05 17:23:56.647[1691249036647] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8090"]
+2023-08-05 17:23:56.650[1691249036650] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2023-08-05 17:23:56.651[1691249036651] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-08-05 17:23:56.808[1691249036808] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2023-08-05 17:23:56.809[1691249036809] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2200 ms
+2023-08-05 17:23:58.534[1691249038534] | INFO  | main       | o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-08-05 17:23:59.396[1691249039396] | WARN  | main       | o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-05 17:23:59.522[1691249039522] | INFO  | main       | o.s.c.n.eureka.InstanceInfoFactory   - Setting initial instance status as: STARTING
+2023-08-05 17:23:59.654[1691249039654] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Initializing Eureka in region us-east-1
+2023-08-05 17:23:59.660[1691249039660] | INFO  | main       | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 17:23:59.738[1691249039738] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
+2023-08-05 17:23:59.738[1691249039738] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
+2023-08-05 17:23:59.738[1691249039738] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
+2023-08-05 17:23:59.738[1691249039738] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application is null : false
+2023-08-05 17:23:59.739[1691249039739] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
+2023-08-05 17:23:59.739[1691249039739] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application version is -1: true
+2023-08-05 17:23:59.739[1691249039739] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
+2023-08-05 17:24:00.303[1691249040303] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - The response status is 200
+2023-08-05 17:24:00.315[1691249040315] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Starting heartbeat executor: renew interval is: 30
+2023-08-05 17:24:00.323[1691249040323] | INFO  | main       | c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-08-05 17:24:00.341[1691249040341] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Discovery Client initialized at timestamp 1691249040340 with initial instances count: 1
+2023-08-05 17:24:00.344[1691249040344] | INFO  | main       | o.s.c.n.e.s.EurekaServiceRegistry    - Registering application BINANCE_API with eureka with status UP
+2023-08-05 17:24:00.345[1691249040345] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1691249040345, current=UP, previous=STARTING]
+2023-08-05 17:24:00.348[1691249040348] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
+2023-08-05 17:24:00.349[1691249040349] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8090"]
+2023-08-05 17:24:00.412[1691249040412] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
+2023-08-05 17:24:00.417[1691249040417] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8090 (http) with context path ''
+2023-08-05 17:24:00.419[1691249040419] | INFO  | main       | o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
+2023-08-05 17:24:01.247[1691249041247] | INFO  | main       | c.e.b.BinanceApiApplication          - Started BinanceApiApplication in 8.186 seconds (process running for 9.929)
+2023-08-05 17:28:59.746[1691249339746] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 17:32:03.999[1691249523999] | INFO  | SpringApplicationShutdownHook | o.s.c.n.e.s.EurekaServiceRegistry    - Unregistering application BINANCE_API with eureka with status DOWN
+2023-08-05 17:32:03.999[1691249523999] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1691249523999, current=DOWN, previous=UP]
+2023-08-05 17:32:03.999[1691249523999] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
+2023-08-05 17:32:04.010[1691249524010] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
+2023-08-05 17:32:04.054[1691249524054] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Shutting down DiscoveryClient ...
+2023-08-05 17:32:07.071[1691249527071] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Unregistering ...
+2023-08-05 17:32:07.080[1691249527080] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - deregister  status: 200
+2023-08-05 17:32:07.146[1691249527146] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Completed shut down of DiscoveryClient
+2023-08-05 17:32:16.328[1691249536328] | INFO  | main       | c.e.b.BinanceApiApplication          - Starting BinanceApiApplication using Java 17 with PID 14724 (C:\Users\serhi\Desktop\Projects\Futures Trading Util\binance_api\target\classes started by serhi in C:\Users\serhi\Desktop\Projects\Futures Trading Util)
+2023-08-05 17:32:16.332[1691249536332] | INFO  | main       | c.e.b.BinanceApiApplication          - No active profile set, falling back to 1 default profile: "default"
+2023-08-05 17:32:17.378[1691249537378] | INFO  | main       | o.s.cloud.context.scope.GenericScope - BeanFactory id=43322444-284a-3d3a-993a-546c43d90254
+2023-08-05 17:32:17.831[1691249537831] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8090 (http)
+2023-08-05 17:32:17.843[1691249537843] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8090"]
+2023-08-05 17:32:17.845[1691249537845] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2023-08-05 17:32:17.845[1691249537845] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-08-05 17:32:17.980[1691249537980] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2023-08-05 17:32:17.981[1691249537981] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1590 ms
+2023-08-05 17:32:19.225[1691249539225] | INFO  | main       | o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-08-05 17:32:19.868[1691249539868] | WARN  | main       | o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-05 17:32:19.938[1691249539938] | INFO  | main       | o.s.c.n.eureka.InstanceInfoFactory   - Setting initial instance status as: STARTING
+2023-08-05 17:32:19.990[1691249539990] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Initializing Eureka in region us-east-1
+2023-08-05 17:32:19.996[1691249539996] | INFO  | main       | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 17:32:20.026[1691249540026] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
+2023-08-05 17:32:20.026[1691249540026] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
+2023-08-05 17:32:20.026[1691249540026] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
+2023-08-05 17:32:20.026[1691249540026] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application is null : false
+2023-08-05 17:32:20.026[1691249540026] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
+2023-08-05 17:32:20.026[1691249540026] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application version is -1: true
+2023-08-05 17:32:20.027[1691249540027] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
+2023-08-05 17:32:20.429[1691249540429] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - The response status is 200
+2023-08-05 17:32:20.436[1691249540436] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Starting heartbeat executor: renew interval is: 30
+2023-08-05 17:32:20.442[1691249540442] | INFO  | main       | c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-08-05 17:32:20.457[1691249540457] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Discovery Client initialized at timestamp 1691249540456 with initial instances count: 3
+2023-08-05 17:32:20.459[1691249540459] | INFO  | main       | o.s.c.n.e.s.EurekaServiceRegistry    - Registering application BINANCE_API with eureka with status UP
+2023-08-05 17:32:20.459[1691249540459] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1691249540459, current=UP, previous=STARTING]
+2023-08-05 17:32:20.462[1691249540462] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
+2023-08-05 17:32:20.462[1691249540462] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8090"]
+2023-08-05 17:32:20.492[1691249540492] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8090 (http) with context path ''
+2023-08-05 17:32:20.495[1691249540495] | INFO  | main       | o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
+2023-08-05 17:32:20.563[1691249540563] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
+2023-08-05 17:32:21.425[1691249541425] | INFO  | main       | c.e.b.BinanceApiApplication          - Started BinanceApiApplication in 6.369 seconds (process running for 7.902)
+2023-08-05 17:37:20.039[1691249840039] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 17:42:20.045[1691250140045] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 17:47:20.056[1691250440056] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 17:52:20.071[1691250740071] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 17:57:20.077[1691251040077] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 18:02:20.084[1691251340084] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 18:07:20.096[1691251640096] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 18:12:20.103[1691251940103] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 18:17:20.118[1691252240118] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 18:22:20.124[1691252540124] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 18:27:20.138[1691252840138] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 19:47:10.228[1691257630228] | INFO  | main       | c.e.b.BinanceApiApplication          - Starting BinanceApiApplication using Java 17 with PID 10336 (C:\Users\serhi\Desktop\Projects\Futures Trading Util\binance_api\target\classes started by serhi in C:\Users\serhi\Desktop\Projects\Futures Trading Util)
+2023-08-05 19:47:10.236[1691257630236] | INFO  | main       | c.e.b.BinanceApiApplication          - No active profile set, falling back to 1 default profile: "default"
+2023-08-05 19:47:11.928[1691257631928] | INFO  | main       | o.s.cloud.context.scope.GenericScope - BeanFactory id=43322444-284a-3d3a-993a-546c43d90254
+2023-08-05 19:47:12.259[1691257632259] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8090 (http)
+2023-08-05 19:47:12.267[1691257632267] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8090"]
+2023-08-05 19:47:12.269[1691257632269] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2023-08-05 19:47:12.269[1691257632269] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-08-05 19:47:12.417[1691257632417] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2023-08-05 19:47:12.420[1691257632420] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2087 ms
+2023-08-05 19:47:13.899[1691257633899] | INFO  | main       | o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-08-05 19:47:14.529[1691257634529] | WARN  | main       | o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-05 19:47:14.581[1691257634581] | INFO  | main       | o.s.c.n.eureka.InstanceInfoFactory   - Setting initial instance status as: STARTING
+2023-08-05 19:47:14.639[1691257634639] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Initializing Eureka in region us-east-1
+2023-08-05 19:47:14.645[1691257634645] | INFO  | main       | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 19:47:14.672[1691257634672] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
+2023-08-05 19:47:14.673[1691257634673] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
+2023-08-05 19:47:14.673[1691257634673] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
+2023-08-05 19:47:14.673[1691257634673] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application is null : false
+2023-08-05 19:47:14.673[1691257634673] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
+2023-08-05 19:47:14.673[1691257634673] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application version is -1: true
+2023-08-05 19:47:14.673[1691257634673] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
+2023-08-05 19:47:15.117[1691257635117] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - The response status is 200
+2023-08-05 19:47:15.133[1691257635133] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Starting heartbeat executor: renew interval is: 30
+2023-08-05 19:47:15.150[1691257635150] | INFO  | main       | c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-08-05 19:47:15.177[1691257635177] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Discovery Client initialized at timestamp 1691257635174 with initial instances count: 0
+2023-08-05 19:47:15.181[1691257635181] | INFO  | main       | o.s.c.n.e.s.EurekaServiceRegistry    - Registering application BINANCE_API with eureka with status UP
+2023-08-05 19:47:15.183[1691257635183] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1691257635183, current=UP, previous=STARTING]
+2023-08-05 19:47:15.187[1691257635187] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8090"]
+2023-08-05 19:47:15.187[1691257635187] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
+2023-08-05 19:47:15.219[1691257635219] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8090 (http) with context path ''
+2023-08-05 19:47:15.221[1691257635221] | INFO  | main       | o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
+2023-08-05 19:47:15.339[1691257635339] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
+2023-08-05 19:47:15.785[1691257635785] | INFO  | main       | c.e.b.BinanceApiApplication          - Started BinanceApiApplication in 7.337 seconds (process running for 11.772)
+2023-08-05 19:47:41.897[1691257661897] | INFO  | http-nio-8090-exec-2 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-05 19:47:41.897[1691257661897] | INFO  | http-nio-8090-exec-2 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2023-08-05 19:47:41.898[1691257661898] | INFO  | http-nio-8090-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2023-08-05 19:47:41.927[1691257661927] | INFO  | http-nio-8090-exec-2 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=opusdt
+2023-08-05 19:47:45.145[1691257665145] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
+2023-08-05 19:47:45.146[1691257665146] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
+2023-08-05 19:47:45.146[1691257665146] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
+2023-08-05 19:47:45.146[1691257665146] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Application is null : false
+2023-08-05 19:47:45.146[1691257665146] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
+2023-08-05 19:47:45.146[1691257665146] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Application version is -1: false
+2023-08-05 19:47:45.146[1691257665146] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
+2023-08-05 19:47:45.156[1691257665156] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - The response status is 200
+2023-08-05 19:52:14.694[1691257934694] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 19:57:14.705[1691258234705] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 20:02:14.714[1691258534714] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 20:07:14.721[1691258834721] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 20:12:14.722[1691259134722] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 20:17:14.737[1691259434737] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 20:22:14.753[1691259734753] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 20:27:14.761[1691260034761] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 20:32:14.762[1691260334762] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 20:37:14.764[1691260634764] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 20:42:14.767[1691260934767] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 20:47:14.780[1691261234780] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 20:52:14.789[1691261534789] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 20:57:14.794[1691261834794] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 21:02:14.800[1691262134800] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 21:07:14.808[1691262434808] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 21:12:14.812[1691262734812] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 21:17:14.819[1691263034819] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 21:22:14.832[1691263334832] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 21:27:14.839[1691263634839] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 21:32:14.840[1691263934840] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-05 21:35:21.677[1691264121677] | INFO  | http-nio-8090-exec-4 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=opusdt
+2023-08-05 21:37:14.846[1691264234846] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
