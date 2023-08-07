@@ -11,8 +11,10 @@ import com.example.telegram_api.services.functional.PriceService;
 import com.example.telegram_api.services.telegram.SessionService;
 import com.example.telegram_api.services.telegram.TelegramBotService;
 import com.example.telegram_api.sorters.AlertsComparator;
+import com.example.telegram_api.util.InlineKeyboardHelper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 
 import java.util.List;
 
@@ -36,7 +38,8 @@ public class AlertTextHandler implements TextHandler {
             session.setState(States.ALL_ALERTS);
             List<Alerts> alerts = alertsService.getAll(request.getUpdate().getMessage().getChat().getUserName());
             String responseList = BinanceApiResponseParser.formResponseFromAlertList(alerts, priceService);
-            telegramService.sendMessage(request.getChatId(), "Your alerts ⤵ \n" + responseList);
+            InlineKeyboardMarkup keyboardMarkup = InlineKeyboardHelper.buildInlineKeyboard(List.of("\uD83D\uDDD1 Clear crossed", " \uD83D\uDE80 Manage alerts"));
+            telegramService.sendMessage(request.getChatId(), "Your alerts ⤵ \n" + responseList, keyboardMarkup);
         } else if (request.getUpdate().getMessage().getText().equals("➕ Place alert")) {
             session.setState(States.PLACE_ALERT);
             telegramService.sendMessage(request.getChatId(), "Now write down a ticker ⤵ ");

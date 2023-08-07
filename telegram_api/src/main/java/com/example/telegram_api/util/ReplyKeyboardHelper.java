@@ -13,7 +13,7 @@ public class ReplyKeyboardHelper {
                 .keyboard(List.of(keyboardRow))
                 .selective(true)
                 .resizeKeyboard(true)
-                .oneTimeKeyboard(false)
+                .oneTimeKeyboard(true)
                 .build();
     }
 }
