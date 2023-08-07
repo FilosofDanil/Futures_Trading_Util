@@ -24,6 +24,7 @@ public class GlobalTextHandler extends UserRequestHandler {
 
     private final TelegramBotService telegramService;
 
+
     @Override
     public boolean isApplicable(UserRequest request) {
         return isTextMessage(request.getUpdate());

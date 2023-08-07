@@ -7,8 +7,10 @@ import com.example.telegram_api.models.entities.Users;
 import com.example.telegram_api.models.telegram_entities.UserRequest;
 import com.example.telegram_api.models.telegram_entities.UserSession;
 import com.example.telegram_api.services.functional.AlertsService;
+import com.example.telegram_api.services.functional.PriceService;
 import com.example.telegram_api.services.telegram.SessionService;
 import com.example.telegram_api.services.telegram.TelegramBotService;
+import com.example.telegram_api.sorters.AlertsComparator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
@@ -25,13 +27,16 @@ public class AlertTextHandler implements TextHandler {
 
     private final AlertsService alertsService;
 
+    private final PriceService priceService;
+
     @Override
     public void handle(UserRequest request) {
         UserSession session = sessionService.getSession(request.getChatId());
         if (request.getUpdate().getMessage().getText().equals("⚠ My alerts")) {
             session.setState(States.ALL_ALERTS);
             List<Alerts> alerts = alertsService.getAll(request.getUpdate().getMessage().getChat().getUserName());
-            telegramService.sendMessage(request.getChatId(), "Your alerts ⤵ " + alerts.toString());
+            String responseList = BinanceApiResponseParser.formResponseFromAlertList(alerts, priceService);
+            telegramService.sendMessage(request.getChatId(), "Your alerts ⤵ \n" + responseList);
         } else if (request.getUpdate().getMessage().getText().equals("➕ Place alert")) {
             session.setState(States.PLACE_ALERT);
             telegramService.sendMessage(request.getChatId(), "Now write down a ticker ⤵ ");
@@ -43,5 +48,24 @@ public class AlertTextHandler implements TextHandler {
     @Override
     public States getApplicableState() {
         return this.applicable;
+    }
+
+    private static class BinanceApiResponseParser {
+        private static String formResponseFromAlertList(List<Alerts> alerts, PriceService priceService) {
+            alerts.sort(new AlertsComparator());
+            StringBuilder stringBuilder = new StringBuilder();
+            for (Alerts alert : alerts) {
+                if (alert.getCrossed()) {
+                    stringBuilder.append("✅ ");
+                } else {
+                    stringBuilder.append("❌ ");
+                }
+                stringBuilder.append(alert.getTicker()).append(" ");
+                stringBuilder.append("Alert price lvl: ").append(alert.getPrice()).append(" ");
+                stringBuilder.append("Current price: ").append(priceService.getPrice(alert.getTicker()));
+                stringBuilder.append("\n");
+            }
+            return stringBuilder.toString();
+        }
     }
 }
