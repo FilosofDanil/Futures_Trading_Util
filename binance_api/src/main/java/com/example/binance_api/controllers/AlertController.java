@@ -18,7 +18,6 @@ public class AlertController {
 
     @GetMapping("/all/{username}")
     public ResponseEntity<List<Alerts>> getAll(@PathVariable String username) {
-        System.out.println("get");
         return new ResponseEntity<>(alertService.getAll(username), HttpStatus.OK);
     }
 
@@ -29,7 +28,6 @@ public class AlertController {
 
     @PostMapping("")
     public ResponseEntity<Alerts> create(@RequestBody Alerts alerts) {
-        System.out.println("post");
         return new ResponseEntity<>(alertService.create(alerts.getUser(), alerts), HttpStatus.OK);
     }
 

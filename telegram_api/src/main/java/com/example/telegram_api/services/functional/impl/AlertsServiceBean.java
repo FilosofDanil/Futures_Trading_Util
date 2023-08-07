@@ -17,7 +17,6 @@ public class AlertsServiceBean implements AlertsService {
 
     @Override
     public List<Alerts> getAll(String username) {
-        System.out.println("invoked");
         return client.getAll(username);
     }
 

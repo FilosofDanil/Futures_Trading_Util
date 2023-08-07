@@ -31,7 +31,6 @@ public class AlertTextHandler implements TextHandler {
         if (request.getUpdate().getMessage().getText().equals("⚠ My alerts")) {
             session.setState(States.ALL_ALERTS);
             List<Alerts> alerts = alertsService.getAll(request.getUpdate().getMessage().getChat().getUserName());
-            System.out.println(alerts);
             telegramService.sendMessage(request.getChatId(), "Your alerts ⤵ " + alerts.toString());
         } else if (request.getUpdate().getMessage().getText().equals("➕ Place alert")) {
             session.setState(States.PLACE_ALERT);
