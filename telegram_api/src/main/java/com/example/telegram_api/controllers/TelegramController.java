@@ -37,8 +37,16 @@ public class TelegramController extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
-        Long chatId = update.getMessage().getChatId();
-        String username = update.getMessage().getChat().getUserName();
+        Long chatId;
+        String username;
+        if (update.hasCallbackQuery()) {
+            chatId = update.getCallbackQuery().getMessage().getChatId();
+            username = update.getCallbackQuery().getMessage().getChat().getUserName();
+        } else {
+            chatId = update.getMessage().getChatId();
+            username = update.getMessage().getChat().getUserName();
+        }
+
         UserSession session = sessionService.getSession(chatId);
         UserRequest userRequest = UserRequest
                 .builder()
@@ -49,11 +57,6 @@ public class TelegramController extends TelegramLongPollingBot {
         userService.saveUser(username, chatId);
         System.out.println(session);
         dispatcher.dispatch(userRequest);
-//
-//        var response = new SendMessage();
-//        response.setChatId(originalMessage.getChatId().toString());
-//        response.setText("Санчізес");
-//        sendMessage(response);
     }
 
     public void sendMessage(SendMessage message) {
