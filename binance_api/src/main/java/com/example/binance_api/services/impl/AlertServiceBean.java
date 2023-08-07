@@ -16,8 +16,8 @@ public class AlertServiceBean implements AlertService {
     private final DataClient client;
 
     @Override
-    public List<Alerts> getAll(Users user) {
-        return client.getAllAlerts().stream().filter(alerts -> alerts.getUser().equals(user)).collect(Collectors.toList());
+    public List<Alerts> getAll(String username) {
+        return client.getAllAlerts().stream().filter(alerts -> alerts.getUser().getProfileName().equals(username)).collect(Collectors.toList());
     }
 
     @Override

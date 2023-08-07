@@ -16,27 +16,29 @@ public class AlertsServiceBean implements AlertsService {
     private final BinanceClient client;
 
     @Override
-    public List<Alerts> getAll(Users user) {
-        return null;
+    public List<Alerts> getAll(String username) {
+        System.out.println("invoked");
+        return client.getAll(username);
     }
 
     @Override
     public Alerts getById(Users user, Long id) {
-        return null;
+        return client.getById(user, id);
     }
 
     @Override
     public Alerts create(Alerts alerts) {
+//        return client.create(alerts);
         return null;
     }
 
     @Override
     public void update(Alerts alerts, Long id) {
-
+        client.update(id, alerts);
     }
 
     @Override
     public void delete(Users user, Long id) {
-
+        client.delete(user, id);
     }
 }

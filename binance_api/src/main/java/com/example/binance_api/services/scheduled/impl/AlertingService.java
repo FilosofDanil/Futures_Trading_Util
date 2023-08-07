@@ -29,7 +29,7 @@ public class AlertingService implements IScheduled {
     public void scheduledTask() {
         List<Users> users = userService.getAll();
         users.forEach(user -> {
-            List<Alerts> alerts = alertService.getAll(user);
+            List<Alerts> alerts = alertService.getAll(user.getProfileName());
             alerts.forEach(alert -> {
                 Double currentPrice = DoubleParser.extractPrice(priceComponent.getPrice(alert.getTicker()));
                 if (currentPrice == null) {

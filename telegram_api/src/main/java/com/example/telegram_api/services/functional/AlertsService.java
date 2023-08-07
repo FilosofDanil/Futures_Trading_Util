@@ -6,7 +6,7 @@ import com.example.telegram_api.models.entities.Users;
 import java.util.List;
 
 public interface AlertsService {
-    List<Alerts> getAll(Users user);
+    List<Alerts> getAll(String username);
 
     Alerts getById(Users user, Long id);
 

@@ -1,79 +1,94 @@
-2023-08-06 17:11:31.861[1691334691861] | INFO  | main       | c.e.b.BinanceApiApplication          - Starting BinanceApiApplication using Java 17 with PID 12784 (C:\Users\serhi\Desktop\Projects\Futures Trading Util\binance_api\target\classes started by serhi in C:\Users\serhi\Desktop\Projects\Futures Trading Util)
-2023-08-06 17:11:31.868[1691334691868] | INFO  | main       | c.e.b.BinanceApiApplication          - No active profile set, falling back to 1 default profile: "default"
-2023-08-06 17:11:33.815[1691334693815] | INFO  | main       | o.s.cloud.context.scope.GenericScope - BeanFactory id=43322444-284a-3d3a-993a-546c43d90254
-2023-08-06 17:11:34.334[1691334694334] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8090 (http)
-2023-08-06 17:11:34.345[1691334694345] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8090"]
-2023-08-06 17:11:34.348[1691334694348] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
-2023-08-06 17:11:34.349[1691334694349] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-08-06 17:11:34.535[1691334694535] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
-2023-08-06 17:11:34.536[1691334694536] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2409 ms
-2023-08-06 17:11:36.227[1691334696227] | INFO  | main       | o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
-2023-08-06 17:11:37.127[1691334697127] | WARN  | main       | o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-08-06 17:11:37.219[1691334697219] | INFO  | main       | o.s.c.n.eureka.InstanceInfoFactory   - Setting initial instance status as: STARTING
-2023-08-06 17:11:37.298[1691334697298] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Initializing Eureka in region us-east-1
-2023-08-06 17:11:37.310[1691334697310] | INFO  | main       | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-08-06 17:11:37.364[1691334697364] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
-2023-08-06 17:11:37.365[1691334697365] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
-2023-08-06 17:11:37.366[1691334697366] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
-2023-08-06 17:11:37.366[1691334697366] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application is null : false
-2023-08-06 17:11:37.367[1691334697367] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
-2023-08-06 17:11:37.367[1691334697367] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application version is -1: true
-2023-08-06 17:11:37.367[1691334697367] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
-2023-08-06 17:11:37.960[1691334697960] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - The response status is 200
-2023-08-06 17:11:37.971[1691334697971] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Starting heartbeat executor: renew interval is: 30
-2023-08-06 17:11:37.997[1691334697997] | INFO  | main       | c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-08-06 17:11:38.033[1691334698033] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Discovery Client initialized at timestamp 1691334698031 with initial instances count: 0
-2023-08-06 17:11:38.036[1691334698036] | INFO  | main       | o.s.c.n.e.s.EurekaServiceRegistry    - Registering application BINANCE_API with eureka with status UP
-2023-08-06 17:11:38.037[1691334698037] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1691334698037, current=UP, previous=STARTING]
-2023-08-06 17:11:38.039[1691334698039] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
-2023-08-06 17:11:38.040[1691334698040] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8090"]
-2023-08-06 17:11:38.075[1691334698075] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8090 (http) with context path ''
-2023-08-06 17:11:38.077[1691334698077] | INFO  | main       | o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
-2023-08-06 17:11:38.279[1691334698279] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
-2023-08-06 17:11:38.956[1691334698956] | INFO  | main       | c.e.b.BinanceApiApplication          - Started BinanceApiApplication in 8.507 seconds (process running for 9.99)
-2023-08-06 17:12:07.975[1691334727975] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
-2023-08-06 17:12:07.975[1691334727975] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
-2023-08-06 17:12:07.976[1691334727976] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
-2023-08-06 17:12:07.976[1691334727976] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Application is null : false
-2023-08-06 17:12:07.976[1691334727976] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
-2023-08-06 17:12:07.976[1691334727976] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Application version is -1: false
-2023-08-06 17:12:07.976[1691334727976] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
-2023-08-06 17:12:07.984[1691334727984] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - The response status is 200
-2023-08-06 17:15:38.345[1691334938345] | INFO  | http-nio-8090-exec-2 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-08-06 17:15:38.345[1691334938345] | INFO  | http-nio-8090-exec-2 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
-2023-08-06 17:15:38.346[1691334938346] | INFO  | http-nio-8090-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
-2023-08-06 17:15:38.381[1691334938381] | INFO  | http-nio-8090-exec-2 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=opusdt
-2023-08-06 17:16:37.385[1691334997385] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-08-06 17:21:37.390[1691335297390] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-08-06 17:26:37.401[1691335597401] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-08-06 17:31:37.408[1691335897408] | INFO  | AsyncResolver-bootstrap-executor-0 | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
-2023-08-06 17:33:48.741[1691336028741] | INFO  | SpringApplicationShutdownHook | o.s.c.n.e.s.EurekaServiceRegistry    - Unregistering application BINANCE_API with eureka with status DOWN
-2023-08-06 17:33:48.742[1691336028742] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1691336028742, current=DOWN, previous=UP]
-2023-08-06 17:33:48.742[1691336028742] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
-2023-08-06 17:33:48.761[1691336028761] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-08-07 11:18:20.632[1691399900632] | INFO  | main       | c.e.b.BinanceApiApplication          - Starting BinanceApiApplication using Java 17 with PID 20332 (C:\Users\serhi\Desktop\Projects\Futures Trading Util\binance_api\target\classes started by serhi in C:\Users\serhi\Desktop\Projects\Futures Trading Util)
+2023-08-07 11:18:20.638[1691399900638] | INFO  | main       | c.e.b.BinanceApiApplication          - No active profile set, falling back to 1 default profile: "default"
+2023-08-07 11:18:22.225[1691399902225] | INFO  | main       | o.s.cloud.context.scope.GenericScope - BeanFactory id=43322444-284a-3d3a-993a-546c43d90254
+2023-08-07 11:18:22.745[1691399902745] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8090 (http)
+2023-08-07 11:18:22.761[1691399902761] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8090"]
+2023-08-07 11:18:22.770[1691399902770] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2023-08-07 11:18:22.770[1691399902770] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-08-07 11:18:22.949[1691399902949] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2023-08-07 11:18:22.949[1691399902949] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2229 ms
+2023-08-07 11:18:24.711[1691399904711] | INFO  | main       | o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-08-07 11:18:25.571[1691399905571] | WARN  | main       | o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-07 11:18:25.647[1691399905647] | INFO  | main       | o.s.c.n.eureka.InstanceInfoFactory   - Setting initial instance status as: STARTING
+2023-08-07 11:18:25.731[1691399905731] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Initializing Eureka in region us-east-1
+2023-08-07 11:18:25.738[1691399905738] | INFO  | main       | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-07 11:18:25.790[1691399905790] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
+2023-08-07 11:18:25.790[1691399905790] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
+2023-08-07 11:18:25.790[1691399905790] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
+2023-08-07 11:18:25.791[1691399905791] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application is null : false
+2023-08-07 11:18:25.791[1691399905791] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
+2023-08-07 11:18:25.792[1691399905792] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application version is -1: true
+2023-08-07 11:18:25.795[1691399905795] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
+2023-08-07 11:18:26.459[1691399906459] | INFO  | main       | c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
 	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1045)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:958)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:396)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:247)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:242)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:68)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:320)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:365)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:375)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:362)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:128)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:482)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$SpringCGLIB$$0.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:957)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:611)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.binance_api.BinanceApiApplication.main(BinanceApiApplication.java:14)
 Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
@@ -112,10 +127,82 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
 	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
-	... 21 more
+	... 67 more
 
-2023-08-06 17:33:48.761[1691336028761] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2023-08-06 17:33:48.778[1691336028778] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-08-07 11:18:26.459[1691399906459] | WARN  | main       | c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-08-07 11:18:26.461[1691399906461] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1045)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:958)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:396)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:247)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:242)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:68)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:320)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:365)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:375)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:362)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:128)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:482)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$SpringCGLIB$$0.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:957)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:611)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.binance_api.BinanceApiApplication.main(BinanceApiApplication.java:14)
+
+2023-08-07 11:18:26.462[1691399906462] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Initial registry fetch from primary servers failed
+2023-08-07 11:18:26.462[1691399906462] | WARN  | main       | c.netflix.discovery.DiscoveryClient  - Using default backup registry implementation which does not do anything.
+2023-08-07 11:18:26.462[1691399906462] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Initial registry fetch from backup servers failed
+2023-08-07 11:18:26.470[1691399906470] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Starting heartbeat executor: renew interval is: 30
+2023-08-07 11:18:26.481[1691399906481] | INFO  | main       | c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-08-07 11:18:26.499[1691399906499] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Discovery Client initialized at timestamp 1691399906498 with initial instances count: 0
+2023-08-07 11:18:26.502[1691399906502] | INFO  | main       | o.s.c.n.e.s.EurekaServiceRegistry    - Registering application BINANCE_API with eureka with status UP
+2023-08-07 11:18:26.503[1691399906503] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1691399906503, current=UP, previous=STARTING]
+2023-08-07 11:18:26.506[1691399906506] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
+2023-08-07 11:18:26.506[1691399906506] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8090"]
+2023-08-07 11:18:26.532[1691399906532] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8090 (http) with context path ''
+2023-08-07 11:18:26.534[1691399906534] | INFO  | main       | o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
+2023-08-07 11:18:26.586[1691399906586] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
@@ -180,8 +267,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
 	... 22 more
 
-2023-08-06 17:33:48.778[1691336028778] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2023-08-06 17:33:48.779[1691336028779] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration failed Cannot execute request on any known server
+2023-08-07 11:18:26.587[1691399906587] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/BINANCE_API": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-08-07 11:18:26.587[1691399906587] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration failed Cannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
@@ -197,7 +284,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-08-06 17:33:48.782[1691336028782] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+2023-08-07 11:18:26.591[1691399906591] | WARN  | DiscoveryClient-InstanceInfoReplicator-0 | c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
@@ -213,124 +300,751 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-08-06 17:33:48.815[1691336028815] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Shutting down DiscoveryClient ...
-2023-08-06 17:33:51.827[1691336031827] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Unregistering ...
-2023-08-06 17:33:51.836[1691336031836] | INFO  | SpringApplicationShutdownHook | c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+2023-08-07 11:18:27.508[1691399907508] | INFO  | main       | c.e.b.BinanceApiApplication          - Started BinanceApiApplication in 8.126 seconds (process running for 10.217)
+2023-08-07 11:18:29.752[1691399909752] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:42.828[1691399922828] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:44.058[1691399924058] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:44.391[1691399924391] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:45.045[1691399925045] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:45.356[1691399925356] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:46.052[1691399926052] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:46.335[1691399926335] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:47.044[1691399927044] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:47.328[1691399927328] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:48.035[1691399928035] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:48.349[1691399928349] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:49.040[1691399929040] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:49.325[1691399929325] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:50.043[1691399930043] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:50.341[1691399930341] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:51.026[1691399931026] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:51.311[1691399931311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:52.026[1691399932026] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:52.314[1691399932314] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:53.040[1691399933040] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:53.334[1691399933334] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:54.047[1691399934047] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:54.340[1691399934340] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:55.029[1691399935029] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:55.334[1691399935334] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:56.030[1691399936030] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:56.345[1691399936345] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:56.478[1691399936478] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
+2023-08-07 11:18:56.478[1691399936478] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
+2023-08-07 11:18:56.478[1691399936478] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
+2023-08-07 11:18:56.478[1691399936478] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Application is null : false
+2023-08-07 11:18:56.478[1691399936478] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
+2023-08-07 11:18:56.478[1691399936478] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Application version is -1: true
+2023-08-07 11:18:56.478[1691399936478] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
+2023-08-07 11:18:56.530[1691399936530] | INFO  | DiscoveryClient-HeartbeatExecutor-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - Re-registering apps/BINANCE_API
+2023-08-07 11:18:56.530[1691399936530] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - The response status is 200
+2023-08-07 11:18:56.530[1691399936530] | INFO  | DiscoveryClient-HeartbeatExecutor-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
+2023-08-07 11:18:56.540[1691399936540] | INFO  | DiscoveryClient-HeartbeatExecutor-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
+2023-08-07 11:18:57.031[1691399937031] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:57.314[1691399937314] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:58.038[1691399938038] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:58.331[1691399938331] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:59.038[1691399939038] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:18:59.336[1691399939336] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:00.042[1691399940042] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:00.334[1691399940334] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:01.048[1691399941048] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:01.349[1691399941349] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:02.036[1691399942036] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:02.334[1691399942334] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:03.035[1691399943035] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:03.358[1691399943358] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:04.028[1691399944028] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:04.317[1691399944317] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:05.035[1691399945035] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:05.365[1691399945365] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:06.033[1691399946033] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:06.327[1691399946327] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:07.023[1691399947023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:07.305[1691399947305] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:08.029[1691399948029] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:08.325[1691399948325] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:09.025[1691399949025] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:09.305[1691399949305] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:10.031[1691399950031] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:10.444[1691399950444] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:11.024[1691399951024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:11.317[1691399951317] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:12.030[1691399952030] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:12.334[1691399952334] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:13.016[1691399953016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:13.309[1691399953309] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:14.019[1691399954019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:14.333[1691399954333] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:15.029[1691399955029] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:15.334[1691399955334] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:16.028[1691399956028] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:16.353[1691399956353] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:17.019[1691399957019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:17.323[1691399957323] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:18.032[1691399958032] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:18.323[1691399958323] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:19.025[1691399959025] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:19.331[1691399959331] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:20.026[1691399960026] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:20.364[1691399960364] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:21.030[1691399961030] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:21.347[1691399961347] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:22.029[1691399962029] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:22.331[1691399962331] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:23.015[1691399963015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:23.310[1691399963310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:24.020[1691399964020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:24.313[1691399964313] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:25.039[1691399965039] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:25.353[1691399965353] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:26.016[1691399966016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:26.319[1691399966319] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:26.537[1691399966537] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
+2023-08-07 11:19:26.537[1691399966537] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
+2023-08-07 11:19:26.537[1691399966537] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
+2023-08-07 11:19:26.537[1691399966537] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Application is null : false
+2023-08-07 11:19:26.537[1691399966537] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
+2023-08-07 11:19:26.537[1691399966537] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Application version is -1: false
+2023-08-07 11:19:26.537[1691399966537] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
+2023-08-07 11:19:26.547[1691399966547] | INFO  | DiscoveryClient-CacheRefreshExecutor-0 | c.netflix.discovery.DiscoveryClient  - The response status is 200
+2023-08-07 11:19:27.020[1691399967020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:27.311[1691399967311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:28.022[1691399968022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:28.316[1691399968316] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:29.019[1691399969019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:29.313[1691399969313] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:30.033[1691399970033] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:30.345[1691399970345] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:31.019[1691399971019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:31.314[1691399971314] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:32.021[1691399972021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:32.325[1691399972325] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:33.039[1691399973039] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:33.343[1691399973343] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:34.017[1691399974017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:34.323[1691399974323] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:35.019[1691399975019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:35.304[1691399975304] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:36.023[1691399976023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:36.416[1691399976416] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:37.031[1691399977031] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:37.333[1691399977333] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:38.023[1691399978023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:38.393[1691399978393] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:39.026[1691399979026] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:39.316[1691399979316] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:40.027[1691399980027] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:40.361[1691399980361] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:41.031[1691399981031] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:41.331[1691399981331] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:42.017[1691399982017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:42.320[1691399982320] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:43.015[1691399983015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:43.395[1691399983395] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:44.018[1691399984018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:44.316[1691399984316] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:45.014[1691399985014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:45.315[1691399985315] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:46.035[1691399986035] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:46.326[1691399986326] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:47.016[1691399987016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:47.312[1691399987312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:48.018[1691399988018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:48.313[1691399988313] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:49.032[1691399989032] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:49.344[1691399989344] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:50.024[1691399990024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:50.310[1691399990310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:51.018[1691399991018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:51.311[1691399991311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:52.020[1691399992020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:52.323[1691399992323] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:53.024[1691399993024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:53.312[1691399993312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:54.016[1691399994016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:54.311[1691399994311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:55.030[1691399995030] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:55.332[1691399995332] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:56.015[1691399996015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:56.327[1691399996327] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:57.030[1691399997030] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:57.332[1691399997332] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:58.021[1691399998021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:58.319[1691399998319] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:59.029[1691399999029] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:19:59.335[1691399999335] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:00.019[1691400000019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:00.317[1691400000317] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:01.013[1691400001013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:01.319[1691400001319] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:02.014[1691400002014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:02.312[1691400002312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:03.026[1691400003026] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:03.312[1691400003312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:04.013[1691400004013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:04.318[1691400004318] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:05.021[1691400005021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:05.333[1691400005333] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:06.025[1691400006025] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:06.312[1691400006312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:07.021[1691400007021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:07.310[1691400007310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:08.014[1691400008014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:08.308[1691400008308] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:09.017[1691400009017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:09.312[1691400009312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:10.024[1691400010024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:10.302[1691400010302] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:11.024[1691400011024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:11.318[1691400011318] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:12.022[1691400012022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:12.304[1691400012304] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:13.016[1691400013016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:13.310[1691400013310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:14.025[1691400014025] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:14.323[1691400014323] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:15.015[1691400015015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:15.302[1691400015302] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:16.015[1691400016015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:16.306[1691400016306] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:17.020[1691400017020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:17.319[1691400017319] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:18.023[1691400018023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:18.310[1691400018310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:19.126[1691400019126] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:19.450[1691400019450] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:20.014[1691400020014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:20.336[1691400020336] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:21.016[1691400021016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:21.304[1691400021304] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:22.022[1691400022022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:22.309[1691400022309] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:23.025[1691400023025] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:23.312[1691400023312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:24.025[1691400024025] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:24.313[1691400024313] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:25.024[1691400025024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:25.311[1691400025311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:26.025[1691400026025] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:26.312[1691400026312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:26.893[1691400026893] | INFO  | http-nio-8090-exec-5 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-07 11:20:26.893[1691400026893] | INFO  | http-nio-8090-exec-5 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2023-08-07 11:20:26.895[1691400026895] | INFO  | http-nio-8090-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 2 ms
+2023-08-07 11:20:26.915[1691400026915] | ERROR | http-nio-8090-exec-5 | o.a.c.c.C.[.[.[.[dispatcherServlet]  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/binance/alerts/dwarf_strong': {public org.springframework.http.ResponseEntity com.example.binance_api.controllers.AlertController.getAll(java.lang.String), public org.springframework.http.ResponseEntity com.example.binance_api.controllers.AlertController.getById(com.example.binance_api.models.Users,java.lang.Long)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/binance/alerts/dwarf_strong': {public org.springframework.http.ResponseEntity com.example.binance_api.controllers.AlertController.getAll(java.lang.String), public org.springframework.http.ResponseEntity com.example.binance_api.controllers.AlertController.getById(com.example.binance_api.models.Users,java.lang.Long)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:505)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-07 11:20:27.014[1691400027014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:27.370[1691400027370] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:28.038[1691400028038] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:28.316[1691400028316] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:29.016[1691400029016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:29.310[1691400029310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:30.020[1691400030020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:30.325[1691400030325] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:31.019[1691400031019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:31.412[1691400031412] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:32.025[1691400032025] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:32.309[1691400032309] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:33.022[1691400033022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:33.317[1691400033317] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:34.025[1691400034025] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:34.341[1691400034341] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:35.012[1691400035012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:35.313[1691400035313] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:36.014[1691400036014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:36.314[1691400036314] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:37.024[1691400037024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:37.309[1691400037309] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:38.011[1691400038011] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:38.312[1691400038312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:39.023[1691400039023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:39.392[1691400039392] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:40.017[1691400040017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:40.347[1691400040347] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:41.021[1691400041021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:41.329[1691400041329] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:42.012[1691400042012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:42.296[1691400042296] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:43.019[1691400043019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:43.319[1691400043319] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:44.027[1691400044027] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:44.316[1691400044316] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:45.017[1691400045017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:45.317[1691400045317] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:46.020[1691400046020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:46.330[1691400046330] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:47.015[1691400047015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:47.322[1691400047322] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:48.014[1691400048014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:48.317[1691400048317] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:49.018[1691400049018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:49.317[1691400049317] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:50.017[1691400050017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:50.315[1691400050315] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:51.022[1691400051022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:51.305[1691400051305] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:52.017[1691400052017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:52.411[1691400052411] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:53.010[1691400053010] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:53.302[1691400053302] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:54.014[1691400054014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:54.313[1691400054313] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:55.019[1691400055019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:55.321[1691400055321] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:56.016[1691400056016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:56.402[1691400056402] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:57.028[1691400057028] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:57.329[1691400057329] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:58.016[1691400058016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:58.305[1691400058305] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:59.017[1691400059017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:20:59.337[1691400059337] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:00.029[1691400060029] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:00.323[1691400060323] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:01.026[1691400061026] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:01.332[1691400061332] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:02.016[1691400062016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:02.311[1691400062311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:03.020[1691400063020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:03.309[1691400063309] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:04.022[1691400064022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:04.303[1691400064303] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:05.013[1691400065013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:05.337[1691400065337] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:06.021[1691400066021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:06.315[1691400066315] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:07.015[1691400067015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:07.312[1691400067312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:08.020[1691400068020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:08.302[1691400068302] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:09.014[1691400069014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:09.338[1691400069338] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:10.016[1691400070016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:10.316[1691400070316] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:11.026[1691400071026] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:11.309[1691400071309] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:12.020[1691400072020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:12.371[1691400072371] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:13.026[1691400073026] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:13.391[1691400073391] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:14.020[1691400074020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:14.308[1691400074308] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:15.023[1691400075023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:15.313[1691400075313] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:16.013[1691400076013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:16.333[1691400076333] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:17.025[1691400077025] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:17.323[1691400077323] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:18.026[1691400078026] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:18.322[1691400078322] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:19.039[1691400079039] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:19.330[1691400079330] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:20.022[1691400080022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:20.318[1691400080318] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:21.013[1691400081013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:21.391[1691400081391] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:22.021[1691400082021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:22.312[1691400082312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:23.026[1691400083026] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:23.289[1691400083289] | INFO  | SpringApplicationShutdownHook | o.s.c.n.e.s.EurekaServiceRegistry    - Unregistering application BINANCE_API with eureka with status DOWN
+2023-08-07 11:21:23.289[1691400083289] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1691400083289, current=DOWN, previous=UP]
+2023-08-07 11:21:23.289[1691400083289] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
+2023-08-07 11:21:23.299[1691400083299] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
+2023-08-07 11:21:23.322[1691400083322] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:23.334[1691400083334] | ERROR | scheduling-1 | o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.binance.connector.futures.client.exceptions.BinanceConnectorException: [ResponseHandler] OKHTTP Error: null
+	at com.binance.connector.futures.client.utils.ResponseHandler.handleResponse(ResponseHandler.java:54)
+	at com.binance.connector.futures.client.utils.RequestHandler.sendApiRequest(RequestHandler.java:56)
+	at com.binance.connector.futures.client.utils.RequestHandler.sendPublicRequest(RequestHandler.java:61)
+	at com.binance.connector.futures.client.impl.futures.Market.tickerSymbol(Market.java:70)
+	at com.example.binance_api.components.impl.PriceComponentBean.getPrice(PriceComponentBean.java:20)
+	at com.example.binance_api.services.scheduled.impl.AlertingService.lambda$scheduledTask$0(AlertingService.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.example.binance_api.services.scheduled.impl.AlertingService.lambda$scheduledTask$1(AlertingService.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.example.binance_api.services.scheduled.impl.AlertingService.scheduledTask(AlertingService.java:31)
+	at jdk.internal.reflect.GeneratedMethodAccessor24.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:425)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:383)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:213)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:192)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:185)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:201)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1189)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1182)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:173)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1026)
-	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:139)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:108)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
-	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:101)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:87)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
-	... 40 more
-
-2023-08-06 17:33:51.836[1691336031836] | WARN  | SpringApplicationShutdownHook | c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/BINANCE_API/DanyloBerk:binance_api:8090": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2023-08-06 17:33:51.836[1691336031836] | ERROR | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - de-registration failedCannot execute request on any known server
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:425)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:383)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:213)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:192)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:185)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:201)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1189)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1182)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:173)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1026)
-	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:139)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:108)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-08-06 17:33:51.899[1691336031899] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Completed shut down of DiscoveryClient
+2023-08-07 11:21:23.335[1691400083335] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Shutting down DiscoveryClient ...
+2023-08-07 11:21:26.348[1691400086348] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Unregistering ...
+2023-08-07 11:21:26.357[1691400086357] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - deregister  status: 200
+2023-08-07 11:21:26.420[1691400086420] | INFO  | SpringApplicationShutdownHook | c.netflix.discovery.DiscoveryClient  - Completed shut down of DiscoveryClient
+2023-08-07 11:21:35.564[1691400095564] | INFO  | main       | c.e.b.BinanceApiApplication          - Starting BinanceApiApplication using Java 17 with PID 22944 (C:\Users\serhi\Desktop\Projects\Futures Trading Util\binance_api\target\classes started by serhi in C:\Users\serhi\Desktop\Projects\Futures Trading Util)
+2023-08-07 11:21:35.568[1691400095568] | INFO  | main       | c.e.b.BinanceApiApplication          - No active profile set, falling back to 1 default profile: "default"
+2023-08-07 11:21:36.584[1691400096584] | INFO  | main       | o.s.cloud.context.scope.GenericScope - BeanFactory id=43322444-284a-3d3a-993a-546c43d90254
+2023-08-07 11:21:36.962[1691400096962] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8090 (http)
+2023-08-07 11:21:36.971[1691400096971] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8090"]
+2023-08-07 11:21:36.973[1691400096973] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2023-08-07 11:21:36.973[1691400096973] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-08-07 11:21:37.074[1691400097074] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2023-08-07 11:21:37.074[1691400097074] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1448 ms
+2023-08-07 11:21:38.320[1691400098320] | INFO  | main       | o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-08-07 11:21:38.952[1691400098952] | WARN  | main       | o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-07 11:21:39.013[1691400099013] | INFO  | main       | o.s.c.n.eureka.InstanceInfoFactory   - Setting initial instance status as: STARTING
+2023-08-07 11:21:39.061[1691400099061] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Initializing Eureka in region us-east-1
+2023-08-07 11:21:39.067[1691400099067] | INFO  | main       | c.n.d.s.r.aws.ConfigClusterResolver  - Resolving eureka endpoints via configuration
+2023-08-07 11:21:39.097[1691400099097] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Disable delta property : false
+2023-08-07 11:21:39.097[1691400099097] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Single vip registry refresh property : null
+2023-08-07 11:21:39.097[1691400099097] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Force full registry fetch : false
+2023-08-07 11:21:39.097[1691400099097] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application is null : false
+2023-08-07 11:21:39.098[1691400099098] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Registered Applications size is zero : true
+2023-08-07 11:21:39.098[1691400099098] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Application version is -1: true
+2023-08-07 11:21:39.098[1691400099098] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Getting all instance registry info from the eureka server
+2023-08-07 11:21:39.490[1691400099490] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - The response status is 200
+2023-08-07 11:21:39.497[1691400099497] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Starting heartbeat executor: renew interval is: 30
+2023-08-07 11:21:39.504[1691400099504] | INFO  | main       | c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-08-07 11:21:39.519[1691400099519] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Discovery Client initialized at timestamp 1691400099518 with initial instances count: 2
+2023-08-07 11:21:39.521[1691400099521] | INFO  | main       | o.s.c.n.e.s.EurekaServiceRegistry    - Registering application BINANCE_API with eureka with status UP
+2023-08-07 11:21:39.522[1691400099522] | INFO  | main       | c.netflix.discovery.DiscoveryClient  - Saw local status change event StatusChangeEvent [timestamp=1691400099522, current=UP, previous=STARTING]
+2023-08-07 11:21:39.524[1691400099524] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090: registering service...
+2023-08-07 11:21:39.525[1691400099525] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8090"]
+2023-08-07 11:21:39.553[1691400099553] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8090 (http) with context path ''
+2023-08-07 11:21:39.555[1691400099555] | INFO  | main       | o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
+2023-08-07 11:21:39.583[1691400099583] | INFO  | DiscoveryClient-InstanceInfoReplicator-0 | c.netflix.discovery.DiscoveryClient  - DiscoveryClient_BINANCE_API/DanyloBerk:binance_api:8090 - registration status: 204
+2023-08-07 11:21:40.143[1691400100143] | INFO  | main       | c.e.b.BinanceApiApplication          - Started BinanceApiApplication in 6.047 seconds (process running for 7.941)
+2023-08-07 11:21:41.050[1691400101050] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:53.598[1691400113598] | INFO  | http-nio-8090-exec-1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-07 11:21:53.599[1691400113599] | INFO  | http-nio-8090-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2023-08-07 11:21:53.600[1691400113600] | INFO  | http-nio-8090-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2023-08-07 11:21:54.058[1691400114058] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:55.024[1691400115024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:55.312[1691400115312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:56.026[1691400116026] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:56.351[1691400116351] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:57.027[1691400117027] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:57.329[1691400117329] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:58.028[1691400118028] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:58.323[1691400118323] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:59.026[1691400119026] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:21:59.355[1691400119355] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:00.038[1691400120038] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:00.341[1691400120341] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:01.021[1691400121021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:01.325[1691400121325] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:02.027[1691400122027] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:02.331[1691400122331] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:03.028[1691400123028] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:03.311[1691400123311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:04.012[1691400124012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:04.355[1691400124355] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:05.019[1691400125019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:05.346[1691400125346] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:06.026[1691400126026] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:06.332[1691400126332] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:07.018[1691400127018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:07.309[1691400127309] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:08.017[1691400128017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:08.331[1691400128331] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:09.022[1691400129022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:09.331[1691400129331] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:10.017[1691400130017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:10.319[1691400130319] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:11.024[1691400131024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:11.335[1691400131335] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:12.024[1691400132024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:12.311[1691400132311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:13.012[1691400133012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:13.311[1691400133311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:14.019[1691400134019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:14.327[1691400134327] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:15.024[1691400135024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:15.313[1691400135313] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:16.015[1691400136015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:16.344[1691400136344] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:17.020[1691400137020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:17.331[1691400137331] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:18.014[1691400138014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:18.310[1691400138310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:19.013[1691400139013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:19.310[1691400139310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:20.014[1691400140014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:20.339[1691400140339] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:21.022[1691400141022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:21.311[1691400141311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:22.020[1691400142020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:22.312[1691400142312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:23.018[1691400143018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:23.316[1691400143316] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:24.024[1691400144024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:24.311[1691400144311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:25.023[1691400145023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:25.337[1691400145337] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:26.022[1691400146022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:26.326[1691400146326] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:27.016[1691400147016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:27.390[1691400147390] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:28.018[1691400148018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:28.389[1691400148389] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:29.049[1691400149049] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:29.362[1691400149362] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:30.073[1691400150073] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:30.383[1691400150383] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:31.010[1691400151010] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:31.349[1691400151349] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:32.019[1691400152019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:32.310[1691400152310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:33.024[1691400153024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:33.312[1691400153312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:34.014[1691400154014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:34.320[1691400154320] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:35.018[1691400155018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:35.330[1691400155330] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:36.020[1691400156020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:36.311[1691400156311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:37.024[1691400157024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:37.311[1691400157311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:38.019[1691400158019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:38.329[1691400158329] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:39.018[1691400159018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:39.309[1691400159309] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:40.020[1691400160020] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:40.342[1691400160342] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:41.021[1691400161021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:41.317[1691400161317] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:42.011[1691400162011] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:42.322[1691400162322] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:43.022[1691400163022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:43.333[1691400163333] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:44.015[1691400164015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:44.342[1691400164342] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:45.028[1691400165028] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:45.328[1691400165328] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:46.015[1691400166015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:46.290[1691400166290] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:47.025[1691400167025] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:47.310[1691400167310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:48.025[1691400168025] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:48.310[1691400168310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:49.019[1691400169019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:49.334[1691400169334] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:50.024[1691400170024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:50.321[1691400170321] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:51.017[1691400171017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:51.320[1691400171320] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:52.089[1691400172089] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:52.388[1691400172388] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:53.023[1691400173023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:53.310[1691400173310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:54.016[1691400174016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:54.315[1691400174315] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:55.023[1691400175023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:55.310[1691400175310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:56.023[1691400176023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:56.350[1691400176350] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:57.011[1691400177011] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:57.305[1691400177305] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:58.021[1691400178021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:58.390[1691400178390] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:59.023[1691400179023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:22:59.337[1691400179337] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:00.021[1691400180021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:00.311[1691400180311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:01.015[1691400181015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:01.341[1691400181341] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:02.015[1691400182015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:02.316[1691400182316] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:03.019[1691400183019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:03.320[1691400183320] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:04.023[1691400184023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:04.353[1691400184353] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:05.014[1691400185014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:05.358[1691400185358] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:06.015[1691400186015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:06.310[1691400186310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:07.021[1691400187021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:07.310[1691400187310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:08.013[1691400188013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:08.310[1691400188310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:09.018[1691400189018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:09.334[1691400189334] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:10.015[1691400190015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:10.334[1691400190334] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:11.013[1691400191013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:11.307[1691400191307] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:12.017[1691400192017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:12.310[1691400192310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:13.011[1691400193011] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:13.309[1691400193309] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:14.021[1691400194021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:14.309[1691400194309] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:15.019[1691400195019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:15.312[1691400195312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:16.016[1691400196016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:16.307[1691400196307] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:17.017[1691400197017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:17.390[1691400197390] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:18.016[1691400198016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:18.304[1691400198304] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:19.019[1691400199019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:19.312[1691400199312] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:20.013[1691400200013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:20.391[1691400200391] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:21.014[1691400201014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:21.310[1691400201310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:22.018[1691400202018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:22.310[1691400202310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:23.023[1691400203023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:23.320[1691400203320] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:24.014[1691400204014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:24.389[1691400204389] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:25.024[1691400205024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:25.363[1691400205363] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:26.023[1691400206023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:26.311[1691400206311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:27.017[1691400207017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:27.317[1691400207317] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:28.014[1691400208014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:28.311[1691400208311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:29.022[1691400209022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:29.340[1691400209340] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:30.015[1691400210015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:30.308[1691400210308] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:31.018[1691400211018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:31.337[1691400211337] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:32.022[1691400212022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:32.302[1691400212302] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:33.024[1691400213024] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:33.311[1691400213311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:34.016[1691400214016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:34.310[1691400214310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:35.008[1691400215008] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:35.326[1691400215326] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:36.014[1691400216014] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:36.310[1691400216310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:37.022[1691400217022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:37.320[1691400217320] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:38.012[1691400218012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:38.305[1691400218305] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:39.018[1691400219018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:39.316[1691400219316] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:40.022[1691400220022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:40.316[1691400220316] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:41.015[1691400221015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:41.311[1691400221311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:42.019[1691400222019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:42.317[1691400222317] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:43.023[1691400223023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:43.316[1691400223316] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:44.013[1691400224013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:44.329[1691400224329] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:45.059[1691400225059] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:45.371[1691400225371] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:46.021[1691400226021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:46.311[1691400226311] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:47.018[1691400227018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:47.313[1691400227313] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:48.019[1691400228019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:48.320[1691400228320] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:49.012[1691400229012] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:49.339[1691400229339] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:50.017[1691400230017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:50.327[1691400230327] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:51.021[1691400231021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:51.316[1691400231316] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:52.011[1691400232011] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:52.308[1691400232308] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:53.019[1691400233019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:53.307[1691400233307] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:54.010[1691400234010] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:54.295[1691400234295] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:55.016[1691400235016] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:55.320[1691400235320] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:56.023[1691400236023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:56.323[1691400236323] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:57.013[1691400237013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:57.309[1691400237309] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:58.022[1691400238022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:58.315[1691400238315] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:59.017[1691400239017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:23:59.339[1691400239339] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:00.028[1691400240028] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:00.633[1691400240633] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:01.019[1691400241019] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:01.307[1691400241307] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:02.015[1691400242015] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:02.310[1691400242310] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:03.022[1691400243022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:03.307[1691400243307] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:04.010[1691400244010] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:04.430[1691400244430] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:05.017[1691400245017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:05.339[1691400245339] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:06.009[1691400246009] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:06.306[1691400246306] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:07.013[1691400247013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:07.309[1691400247309] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:08.011[1691400248011] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:08.309[1691400248309] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:09.013[1691400249013] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:09.321[1691400249321] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:10.023[1691400250023] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:10.339[1691400250339] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:11.017[1691400251017] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:11.399[1691400251399] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:12.011[1691400252011] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:12.309[1691400252309] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:13.018[1691400253018] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:13.320[1691400253320] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:14.022[1691400254022] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:14.339[1691400254339] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:15.021[1691400255021] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:15.301[1691400255301] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:16.011[1691400256011] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:16.314[1691400256314] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt
+2023-08-07 11:24:17.010[1691400257010] | INFO  | scheduling-1 | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/ticker/price?symbol=celousdt

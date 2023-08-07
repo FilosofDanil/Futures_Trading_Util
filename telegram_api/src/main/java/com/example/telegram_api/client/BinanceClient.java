@@ -11,14 +11,14 @@ import java.util.List;
 public interface BinanceClient {
     @GetMapping("/price/{marker}")
     String getPrice(@PathVariable("marker") String marker);
-    @GetMapping("/alerts")
-    List<Alerts> getAll(@RequestBody Users user);
-    @GetMapping("/{id}")
+    @GetMapping("/alerts/{id}")
     Alerts getById(@RequestBody Users user, @PathVariable("id") Long id);
     @PostMapping("/alerts")
     Alerts create( @RequestBody Alerts alerts);
-    @PutMapping("/{id}")
+    @PutMapping("/alerts/{id}")
     Alerts update(@PathVariable("id") Long id, @RequestBody Alerts alerts);
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/alerts/{id}")
     void delete(@RequestBody Users user, @PathVariable("id") Long id);
+    @GetMapping("/alerts/all/{username}")
+    List<Alerts> getAll(@PathVariable String username);
 }
