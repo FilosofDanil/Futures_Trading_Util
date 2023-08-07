@@ -32,6 +32,7 @@ public class AlertServiceBean implements AlertService {
 
     @Override
     public Alerts create(Users user, Alerts alert) {
+        alert.setUser(client.getAllUsers().stream().filter(users -> users.getProfileName().equals(user.getProfileName())).findFirst().get());
         client.createAlert(alert);
         return alert;
     }

@@ -11,5 +11,7 @@ public class UserSession {
     private States state;
     private String email;
     private String password;
+    private String ticker;
+    private Double price;
     private Boolean auth;
 }

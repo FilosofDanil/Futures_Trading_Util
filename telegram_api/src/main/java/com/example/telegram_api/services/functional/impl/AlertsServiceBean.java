@@ -27,8 +27,7 @@ public class AlertsServiceBean implements AlertsService {
 
     @Override
     public Alerts create(Alerts alerts) {
-//        return client.create(alerts);
-        return null;
+        return client.create(alerts);
     }
 
     @Override

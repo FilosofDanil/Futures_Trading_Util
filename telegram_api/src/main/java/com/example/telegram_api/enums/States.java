@@ -12,5 +12,6 @@ public enum States {
     WAITING_FOR_TICKER,
     ALERT_MENU,
     ALL_ALERTS,
-    PLACE_ALERT
+    PLACE_ALERT,
+    WAITING_FOR_PRICE
 }

@@ -43,6 +43,7 @@ public class AlertTextHandler implements TextHandler {
         } else {
             telegramService.sendMessage(request.getChatId(), "Not a command from menu! ");
         }
+        sessionService.saveSession(request.getChatId(), session);
     }
 
     @Override
