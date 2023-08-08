@@ -16,9 +16,9 @@ import java.util.List;
 public class AlertController {
     private final AlertService alertService;
 
-    @GetMapping("")
-    public ResponseEntity<List<Alerts>> getAll(@RequestBody Users user) {
-        return new ResponseEntity<>(alertService.getAll(user), HttpStatus.OK);
+    @GetMapping("/all/{username}")
+    public ResponseEntity<List<Alerts>> getAll(@PathVariable String username) {
+        return new ResponseEntity<>(alertService.getAll(username), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
@@ -27,13 +27,13 @@ public class AlertController {
     }
 
     @PostMapping("")
-    public ResponseEntity<Alerts> create(@RequestBody Users user, @RequestBody Alerts alerts) {
-        return new ResponseEntity<>(alertService.create(user, alerts), HttpStatus.OK);
+    public ResponseEntity<Alerts> create(@RequestBody Alerts alerts) {
+        return new ResponseEntity<>(alertService.create(alerts.getUser(), alerts), HttpStatus.OK);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Alerts> update(@RequestBody Users user, @PathVariable("id") Long id, @RequestBody Alerts alerts) {
-        return new ResponseEntity<>(alertService.update(user, alerts, id), HttpStatus.OK);
+    public ResponseEntity<Alerts> update(@PathVariable("id") Long id, @RequestBody Alerts alerts) {
+        return new ResponseEntity<>(alertService.update(alerts.getUser(), alerts, id), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")

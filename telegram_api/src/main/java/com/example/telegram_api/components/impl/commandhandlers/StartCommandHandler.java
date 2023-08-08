@@ -1,10 +1,10 @@
-package com.example.telegram_api.components.impl;
+package com.example.telegram_api.components.impl.commandhandlers;
 
 import com.example.telegram_api.client.DataClient;
 import com.example.telegram_api.enums.States;
-import com.example.telegram_api.models.UserSession;
-import com.example.telegram_api.models.UserRequest;
-import com.example.telegram_api.components.UserRequestHandler;
+import com.example.telegram_api.models.telegram_entities.UserSession;
+import com.example.telegram_api.models.telegram_entities.UserRequest;
+import com.example.telegram_api.components.abstr.UserRequestHandler;
 import com.example.telegram_api.services.telegram.SessionService;
 import com.example.telegram_api.services.telegram.TelegramBotService;
 import lombok.AllArgsConstructor;

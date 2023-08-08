@@ -6,7 +6,7 @@ import com.example.binance_api.models.Users;
 import java.util.List;
 
 public interface AlertService {
-    List<Alerts> getAll(Users user);
+    List<Alerts> getAll(String username);
 
     Alerts getById(Users user, Long id);
 

@@ -1,10 +1,11 @@
 package com.example.telegram_api.controllers;
 
 import com.example.telegram_api.configs.BotConfig;
-import com.example.telegram_api.models.UserRequest;
+import com.example.telegram_api.models.telegram_entities.UserRequest;
 import com.example.telegram_api.dispatcher.IDispatcher;
-import com.example.telegram_api.models.UserSession;
+import com.example.telegram_api.models.telegram_entities.UserSession;
 import com.example.telegram_api.services.telegram.SessionService;
+import com.example.telegram_api.services.telegram.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -22,6 +23,8 @@ public class TelegramController extends TelegramLongPollingBot {
 
     private final SessionService sessionService;
 
+    private final UserService userService;
+
     @Override
     public String getBotUsername() {
         return config.getName();
@@ -34,9 +37,16 @@ public class TelegramController extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
-        var originalMessage = update.getMessage();
-        System.out.println(originalMessage.getText());
-        Long chatId = update.getMessage().getChatId();
+        Long chatId;
+        String username;
+        if (update.hasCallbackQuery()) {
+            chatId = update.getCallbackQuery().getMessage().getChatId();
+            username = update.getCallbackQuery().getMessage().getChat().getUserName();
+        } else {
+            chatId = update.getMessage().getChatId();
+            username = update.getMessage().getChat().getUserName();
+        }
+
         UserSession session = sessionService.getSession(chatId);
         UserRequest userRequest = UserRequest
                 .builder()
@@ -44,14 +54,9 @@ public class TelegramController extends TelegramLongPollingBot {
                 .chatId(chatId)
                 .userSession(session)
                 .build();
-
-        System.out.println(userRequest.getUserSession().toString());
+        userService.saveUser(username, chatId);
+        System.out.println(session);
         dispatcher.dispatch(userRequest);
-//
-//        var response = new SendMessage();
-//        response.setChatId(originalMessage.getChatId().toString());
-//        response.setText("Санчізес");
-//        sendMessage(response);
     }
 
     public void sendMessage(SendMessage message) {

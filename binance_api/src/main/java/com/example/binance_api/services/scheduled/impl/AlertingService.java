@@ -1,7 +1,9 @@
 package com.example.binance_api.services.scheduled.impl;
 
+import com.example.binance_api.client.TelegramClient;
 import com.example.binance_api.components.PriceComponent;
 import com.example.binance_api.models.Alerts;
+import com.example.binance_api.models.Message;
 import com.example.binance_api.models.Users;
 import com.example.binance_api.services.AlertService;
 import com.example.binance_api.services.impl.UserServiceBean;
@@ -20,20 +22,20 @@ public class AlertingService implements IScheduled {
     private final UserServiceBean userService;
     private final AlertService alertService;
     private final PriceComponent priceComponent;
-
+    private final TelegramClient telegramClient;
 
     @Override
     @Scheduled(cron = "*/1 * * * * *")
     public void scheduledTask() {
         List<Users> users = userService.getAll();
         users.forEach(user -> {
-            List<Alerts> alerts = alertService.getAll(user);
+            List<Alerts> alerts = alertService.getAll(user.getProfileName());
             alerts.forEach(alert -> {
                 Double currentPrice = DoubleParser.extractPrice(priceComponent.getPrice(alert.getTicker()));
                 if (currentPrice == null) {
                     throw new NullPointerException("Something wrong with ticker price. Or this ticker is undefined");
                 }
-                if(alert.getCrossed()){
+                if (alert.getCrossed()) {
                     return;
                 }
                 if (Objects.equals(currentPrice, alert.getPrice())) {
@@ -42,9 +44,16 @@ public class AlertingService implements IScheduled {
                     alert.setCrossed(true);
                 } else if (alert.getCurrent_price() > alert.getPrice() && currentPrice < alert.getPrice()) {
                     alert.setCrossed(true);
+                } else{
+                    return;
                 }
                 alert.setCross_date(new Date());
                 alertService.update(user, alert, alert.getId());
+                Message message = Message.builder()
+                        .message("Alert! Ticker " + alert.getTicker() +" has been crossed price level " + alert.getPrice())
+                        .profileName(user.getProfileName())
+                        .build();
+                telegramClient.receiveMessage(message);
             });
         });
 
