@@ -9,8 +9,10 @@ import com.example.telegram_api.services.functional.AlertsService;
 import com.example.telegram_api.services.functional.ClearService;
 import com.example.telegram_api.services.telegram.SessionService;
 import com.example.telegram_api.services.telegram.TelegramBotService;
+import com.example.telegram_api.util.ReplyKeyboardHelper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 
 import java.util.List;
 
@@ -33,7 +35,9 @@ public class ClearCrossedHandler implements QueryHandler {
         clearService.clear(request.getUpdate().getCallbackQuery().getMessage().getChat().getUserName());
         session.setState(States.CLEARED_ALERTS);
         sessionService.saveSession(request.getChatId(), session);
-        telegramService.sendMessage(request.getChatId(), "Successfully cleared, click the button below to go back to your list! ");
+        List<String> rows = List.of("\uD83D\uDD19 Back");
+        ReplyKeyboardMarkup replyKeyboard = ReplyKeyboardHelper.buildMainMenu(rows);
+        telegramService.sendMessage(request.getChatId(), "Successfully cleared, click the button below to go back to your list! ", replyKeyboard);
 
     }
 

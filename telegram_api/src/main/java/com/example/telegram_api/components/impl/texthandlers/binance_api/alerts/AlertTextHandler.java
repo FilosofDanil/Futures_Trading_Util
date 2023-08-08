@@ -3,7 +3,6 @@ package com.example.telegram_api.components.impl.texthandlers.binance_api.alerts
 import com.example.telegram_api.components.abstr.TextHandler;
 import com.example.telegram_api.enums.States;
 import com.example.telegram_api.models.entities.Alerts;
-import com.example.telegram_api.models.entities.Users;
 import com.example.telegram_api.models.telegram_entities.UserRequest;
 import com.example.telegram_api.models.telegram_entities.UserSession;
 import com.example.telegram_api.services.functional.AlertsService;
