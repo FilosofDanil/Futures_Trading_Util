@@ -46,7 +46,7 @@ public class AlertServiceBean implements AlertService, ClearAlertsService {
 
     @Override
     public void clear(String username) {
-        List<Alerts> list = getAllAlerts(username);
+        List<Alerts> list = getAllAlerts(username).stream().filter(Alerts::getCrossed).toList();
         client.clear(list);
     }
 

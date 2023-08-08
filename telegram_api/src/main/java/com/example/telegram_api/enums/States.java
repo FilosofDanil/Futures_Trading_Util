@@ -13,5 +13,6 @@ public enum States {
     ALERT_MENU,
     ALL_ALERTS,
     PLACE_ALERT,
-    WAITING_FOR_PRICE
+    WAITING_FOR_PRICE,
+    CLEARED_ALERTS
 }

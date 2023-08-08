@@ -21,4 +21,6 @@ public interface BinanceClient {
     void delete(@RequestBody Users user, @PathVariable("id") Long id);
     @GetMapping("/alerts/all/{username}")
     List<Alerts> getAll(@PathVariable String username);
+    @DeleteMapping("/alerts/clear/{username}")
+    void clear(@PathVariable("username") String username);
 }
