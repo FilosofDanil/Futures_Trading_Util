@@ -21,4 +21,6 @@ public interface DataClient {
     void createAlert(@RequestBody Alerts alert);
     @GetMapping("/users/")
     List<Users> getAllUsers();
+    @DeleteMapping("/alerts/clear")
+    Alerts clear(@RequestBody List<Alerts> alerts);
 }

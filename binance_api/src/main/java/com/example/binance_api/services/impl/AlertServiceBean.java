@@ -4,6 +4,7 @@ import com.example.binance_api.client.DataClient;
 import com.example.binance_api.models.Alerts;
 import com.example.binance_api.models.Users;
 import com.example.binance_api.services.AlertService;
+import com.example.binance_api.services.ClearAlertsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,12 +13,12 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class AlertServiceBean implements AlertService {
+public class AlertServiceBean implements AlertService, ClearAlertsService {
     private final DataClient client;
 
     @Override
     public List<Alerts> getAll(String username) {
-        return client.getAllAlerts().stream().filter(alerts -> alerts.getUser().getProfileName().equals(username)).collect(Collectors.toList());
+        return getAllAlerts(username);
     }
 
     @Override
@@ -41,5 +42,15 @@ public class AlertServiceBean implements AlertService {
     public Alerts update(Users user, Alerts alert, Long id) {
         client.updateAlert(id, alert);
         return alert;
+    }
+
+    @Override
+    public void clear(String username) {
+        List<Alerts> list = getAllAlerts(username);
+        client.clear(list);
+    }
+
+    private List<Alerts> getAllAlerts(String username) {
+        return client.getAllAlerts().stream().filter(alerts -> alerts.getUser().getProfileName().equals(username)).collect(Collectors.toList());
     }
 }

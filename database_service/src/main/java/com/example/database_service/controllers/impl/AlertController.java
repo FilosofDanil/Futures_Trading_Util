@@ -49,7 +49,7 @@ public class AlertController implements IRestController<Alerts>, ClearController
 
     @Override
     @DeleteMapping("/clear")
-    public void clear(List<Alerts> alerts) {
+    public void clear(@RequestBody  List<Alerts> alerts) {
         alertsClearService.clear(alerts);
     }
 }

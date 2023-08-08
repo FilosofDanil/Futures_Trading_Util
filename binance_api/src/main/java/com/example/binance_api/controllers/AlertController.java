@@ -3,6 +3,7 @@ package com.example.binance_api.controllers;
 import com.example.binance_api.models.Alerts;
 import com.example.binance_api.models.Users;
 import com.example.binance_api.services.AlertService;
+import com.example.binance_api.services.ClearAlertsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,8 @@ import java.util.List;
 @RequestMapping("api/v1/binance/alerts")
 public class AlertController {
     private final AlertService alertService;
+
+    private final ClearAlertsService clearAlertsService;
 
     @GetMapping("/all/{username}")
     public ResponseEntity<List<Alerts>> getAll(@PathVariable String username) {
@@ -39,6 +42,12 @@ public class AlertController {
     @DeleteMapping("/{id}")
     public HttpStatus delete(@RequestBody Users user, @PathVariable("id") Long id) {
         alertService.delete(user, id);
+        return HttpStatus.OK;
+    }
+
+    @DeleteMapping("/clear/{username}")
+    public HttpStatus clear(@PathVariable("username") String username) {
+        clearAlertsService.clear(username);
         return HttpStatus.OK;
     }
 }
