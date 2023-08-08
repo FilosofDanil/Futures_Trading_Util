@@ -28,7 +28,7 @@ public class PriceCommandHandler extends UserRequestHandler {
         if (request.getUserSession().getState() != null) {
             UserSession session = request.getUserSession();
             if(!session.getAuth()){
-                telegramService.sendMessage(request.getChatId(), "You're need to login(1-2 mins)");
+                telegramService.sendMessage(request.getChatId(), "You're need to login(it'll take 1-2 mins)");
                 return;
             }
             session.setState(States.WAITING_FOR_TICKER);

@@ -1,6 +1,6 @@
 package com.example.telegram_api.components.impl;
 
-import com.example.telegram_api.components.abstr.TextHandler;
+import com.example.telegram_api.components.abstr.QueryHandler;
 import com.example.telegram_api.components.abstr.UserRequestHandler;
 import com.example.telegram_api.enums.States;
 import com.example.telegram_api.models.telegram_entities.UserRequest;
@@ -16,9 +16,8 @@ import java.util.List;
 
 @Component
 @RequiredArgsConstructor
-public class GlobalTextHandler extends UserRequestHandler {
-
-    private final List<TextHandler> textHandlers;
+public class GlobalQueryHandler extends UserRequestHandler {
+    private final List<QueryHandler> queryHandlers;
 
     private final SessionService sessionService;
 
@@ -27,21 +26,20 @@ public class GlobalTextHandler extends UserRequestHandler {
 
     @Override
     public boolean isApplicable(UserRequest request) {
-        return isTextMessage(request.getUpdate());
+        return isBackQuery(request.getUpdate());
     }
-
 
     @Override
     public void handle(UserRequest request) {
         try {
             UserSession session = request.getUserSession();
-            if(!session.getAuth()  && session.getState()!= States.LOGIN_WAIT_PASSWORD  && session.getState()!= States.WAITING_FOR_MAIL  && session.getState()!= States.WAITING_FOR_PASSWORD && session.getState()!= States.SUCCESSFULLY_SIGNED_UP){
+            if(!session.getAuth()){
                 telegramService.sendMessage(request.getChatId(), "You're need to login(it'll take 1-2 mins)");
                 return;
             }
-            for (TextHandler textHandler : textHandlers) {
-                if(textHandler.getApplicableState().equals(session.getState())){
-                    textHandler.handle(request);
+            for (QueryHandler queryHandler : queryHandlers) {
+                if(queryHandler.getCallbackQuery().equals(request.getUpdate().getCallbackQuery().getData())){
+                    queryHandler.handle(request);
                     return;
                 }
             }
@@ -58,6 +56,6 @@ public class GlobalTextHandler extends UserRequestHandler {
 
     @Override
     public boolean isGlobal() {
-        return false;
+        return true;
     }
 }

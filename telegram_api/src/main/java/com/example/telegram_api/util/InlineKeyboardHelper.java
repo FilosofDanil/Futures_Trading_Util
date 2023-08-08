@@ -16,7 +16,7 @@ public class InlineKeyboardHelper {
 
         rows.forEach(row ->{
             InlineKeyboardButton button = new InlineKeyboardButton();
-            button.setCallbackData("update_msg_text");
+            button.setCallbackData(row);
             button.setText(row);
             rowInline.add(button);
         });

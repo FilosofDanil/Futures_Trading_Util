@@ -32,6 +32,10 @@ public class RegistrateHandler extends UserRequestHandler {
             UserSession session = request.getUserSession();
             session.setState(States.WAITING_FOR_MAIL);
             sessionService.saveSession(request.getChatId(), session);
+            if(session.getAuth()){
+                telegramService.sendMessage(request.getChatId(), "You already have an account!");
+                return;
+            }
             telegramService.sendMessage(request.getChatId(), "Send your mail⤵️");
         } else{
             telegramService.sendMessage(request.getChatId(), "You need to start bot -> /start");
