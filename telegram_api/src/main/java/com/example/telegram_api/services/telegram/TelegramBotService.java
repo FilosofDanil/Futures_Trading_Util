@@ -30,7 +30,6 @@ public class TelegramBotService {
                 //Other possible parse modes: MARKDOWNV2, MARKDOWN, which allows to make text bold, and all other things
                 .parseMode(ParseMode.HTML)
                 .replyMarkup(replyKeyboard)
-                .
                 .build();
         execute(sendMessage);
     }

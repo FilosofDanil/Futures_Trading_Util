@@ -37,7 +37,7 @@ public class AlertTextHandler implements TextHandler {
             session.setState(States.ALL_ALERTS);
             List<Alerts> alerts = alertsService.getAll(request.getUpdate().getMessage().getChat().getUserName());
             String responseList = BinanceApiResponseParser.formResponseFromAlertList(alerts, priceService);
-            InlineKeyboardMarkup keyboardMarkup = InlineKeyboardHelper.buildInlineKeyboard(List.of("\uD83D\uDDD1 Clear crossed", " \uD83D\uDE80 Manage alerts"));
+            InlineKeyboardMarkup keyboardMarkup = InlineKeyboardHelper.buildInlineKeyboard(List.of("\uD83D\uDDD1 Clear crossed", "\uD83D\uDE80 Manage alerts"), true);
             telegramService.sendMessage(request.getChatId(), "Your alerts ⤵ \n" + responseList, keyboardMarkup);
         } else if (request.getUpdate().getMessage().getText().equals("➕ Place alert")) {
             session.setState(States.PLACE_ALERT);

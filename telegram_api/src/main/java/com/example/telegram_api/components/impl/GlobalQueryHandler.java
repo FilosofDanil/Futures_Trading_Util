@@ -38,7 +38,7 @@ public class GlobalQueryHandler extends UserRequestHandler {
                 return;
             }
             for (QueryHandler queryHandler : queryHandlers) {
-                if(queryHandler.getCallbackQuery().equals(request.getUpdate().getCallbackQuery().getData())){
+                if((queryHandler.getCallbackQuery().equals(request.getUpdate().getCallbackQuery().getData()) || queryHandler.isInteger())){
                     queryHandler.handle(request);
                     return;
                 }

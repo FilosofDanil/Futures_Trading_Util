@@ -7,4 +7,6 @@ public interface QueryHandler {
     void handle(UserRequest request);
 
     String getCallbackQuery();
+
+    boolean isInteger();
 }
