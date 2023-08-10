@@ -27,7 +27,7 @@ public class AlertServiceBean implements AlertService, ClearAlertsService {
     }
 
     @Override
-    public void delete(Users user, Long id) {
+    public void delete(Long id) {
         client.deleteAlert(id);
     }
 

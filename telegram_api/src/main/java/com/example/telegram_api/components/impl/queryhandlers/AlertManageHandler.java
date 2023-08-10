@@ -47,6 +47,7 @@ public class AlertManageHandler implements QueryHandler {
         alertsList.forEach(alert -> {
             responseStringList.add("\uD83D\uDDD1 " + alert.getTicker() + " price level: " + alert.getPrice());
         });
+        responseStringList.add("\uD83D\uDD19 Back");
         return responseStringList;
     }
 
@@ -55,6 +56,7 @@ public class AlertManageHandler implements QueryHandler {
         alertsList.forEach(alert -> {
             map.put("\uD83D\uDDD1 " + alert.getTicker() + " price level: " + alert.getPrice(), alert.getId().toString());
         });
+        map.put("\uD83D\uDD19 Back", "\uD83D\uDD19 Back");
         return map;
     }
 

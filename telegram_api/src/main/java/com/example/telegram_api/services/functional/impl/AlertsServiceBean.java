@@ -37,8 +37,8 @@ public class AlertsServiceBean implements AlertsService, ClearService {
     }
 
     @Override
-    public void delete(Users user, Long id) {
-        client.delete(user, id);
+    public void delete(Long id) {
+        client.delete(id);
     }
 
     @Override

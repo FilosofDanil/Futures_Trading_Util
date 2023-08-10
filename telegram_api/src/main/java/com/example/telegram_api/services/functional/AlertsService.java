@@ -8,11 +8,11 @@ import java.util.List;
 public interface AlertsService {
     List<Alerts> getAll(String username);
 
-    Alerts getById(Users user, Long id);
+    Alerts getById(Users users, Long id);
 
     Alerts create (Alerts alerts);
 
     void update (Alerts alerts, Long id);
 
-    void delete (Users user, Long id);
+    void delete (Long id);
 }

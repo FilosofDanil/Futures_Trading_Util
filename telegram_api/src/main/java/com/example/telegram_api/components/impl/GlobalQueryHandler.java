@@ -12,10 +12,11 @@ import feign.FeignException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
-@RequiredArgsConstructor
 public class GlobalQueryHandler extends UserRequestHandler {
     private final List<QueryHandler> queryHandlers;
 
@@ -23,6 +24,16 @@ public class GlobalQueryHandler extends UserRequestHandler {
 
     private final TelegramBotService telegramService;
 
+
+    public GlobalQueryHandler(List<QueryHandler> queryHandlers, SessionService sessionService, TelegramBotService telegramService) {
+        this.queryHandlers = queryHandlers
+                .stream()
+                .sorted(Comparator
+                        .comparing(QueryHandler::isInteger))
+                .collect(Collectors.toList());
+        this.sessionService = sessionService;
+        this.telegramService = telegramService;
+    }
 
     @Override
     public boolean isApplicable(UserRequest request) {
@@ -33,12 +44,12 @@ public class GlobalQueryHandler extends UserRequestHandler {
     public void handle(UserRequest request) {
         try {
             UserSession session = request.getUserSession();
-            if(!session.getAuth()){
+            if (!session.getAuth()) {
                 telegramService.sendMessage(request.getChatId(), "You're need to login(it'll take 1-2 mins)");
                 return;
             }
             for (QueryHandler queryHandler : queryHandlers) {
-                if((queryHandler.getCallbackQuery().equals(request.getUpdate().getCallbackQuery().getData()) || queryHandler.isInteger())){
+                if ((queryHandler.getCallbackQuery().equals(request.getUpdate().getCallbackQuery().getData()) || queryHandler.isInteger())) {
                     queryHandler.handle(request);
                     return;
                 }

@@ -40,8 +40,8 @@ public class AlertController {
     }
 
     @DeleteMapping("/{id}")
-    public HttpStatus delete(@RequestBody Users user, @PathVariable("id") Long id) {
-        alertService.delete(user, id);
+    public HttpStatus delete(@PathVariable("id") Long id) {
+        alertService.delete(id);
         return HttpStatus.OK;
     }
 

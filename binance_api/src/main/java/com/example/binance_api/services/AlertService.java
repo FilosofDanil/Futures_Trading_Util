@@ -10,7 +10,7 @@ public interface AlertService {
 
     Alerts getById(Users user, Long id);
 
-    void delete(Users user, Long id);
+    void delete(Long id);
 
     Alerts create(Users user, Alerts alert);
 
